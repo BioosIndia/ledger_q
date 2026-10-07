@@ -1,0 +1,20 @@
+[
+  {
+    "project": "forge",
+    "language_controls": "English/Hindi selector, same viewing position",
+    "media_assets": "present",
+    "native_controls": true,
+    "autoplay": false,
+    "fallback": "download + transcript",
+    "scope": "Source and asset audit, not browser interaction QA"
+  },
+  {
+    "project": "ledger-q",
+    "language_controls": "English/Hindi selector, same viewing position",
+    "media_assets": "present",
+    "native_controls": true,
+    "autoplay": false,
+    "fallback": "download + transcript",
+    "scope": "Source and asset audit, not browser interaction QA"
+  }
+]

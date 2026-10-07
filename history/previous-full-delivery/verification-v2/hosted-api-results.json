@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-06T18:13:45.290120+00:00",
+  "scope": "Hosted HTTP API verification, not browser visual or professional validation. Test account/workspace contains explicitly synthetic delivery-check records only.",
+  "results": [
+    {
+      "name": "Hosted bindings and encryption configuration",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted saved demo persists identical record identities",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted synthetic assay remains HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted source original readback",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted app-owned sign-in advances into saved workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted verification",
+      "result": "BLOCKED_OR_FAILED",
+      "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "passed": 5
+}

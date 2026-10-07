@@ -1,0 +1,163 @@
+{
+  "at": "2026-10-06T12:22:35.977Z",
+  "scope": "D1-compatible SQLite/R2-memory API integration + synthetic controls. Not deployed/browser/professional validation.",
+  "passed": 39,
+  "results": [
+    {
+      "name": "Saved read-only public case bootstraps and retains source hashes",
+      "result": "PASS"
+    },
+    {
+      "name": "Public visitor cannot mutate workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "App account creation stores separate synthetic workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Private workspace state readback and owner role boundaries",
+      "result": "PASS"
+    },
+    {
+      "name": "Cross-origin save is rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing CSRF cannot mutate data",
+      "result": "PASS"
+    },
+    {
+      "name": "Source permission is enforced before saving",
+      "result": "PASS"
+    },
+    {
+      "name": "Authorized original saved to R2 with exact readback",
+      "result": "PASS"
+    },
+    {
+      "name": "Idempotent source operation does not duplicate original records",
+      "result": "PASS"
+    },
+    {
+      "name": "Exact requirement extraction cites source/version/span",
+      "result": "PASS"
+    },
+    {
+      "name": "Stale expected workspace revision cannot save",
+      "result": "PASS"
+    },
+    {
+      "name": "Unconfigured live AI cannot fake success or transmit data",
+      "result": "PASS"
+    },
+    {
+      "name": "Bounded deterministic team saves planning, specialists and human wait",
+      "result": "PASS"
+    },
+    {
+      "name": "Executed control pack retains expected/actual cases and scope",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner does not imply reviewer authority",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit synthetic reviewer role assignment succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "Real TOTP enrollment requires the current authenticator code",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing CAPA effectiveness blocks signed approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Named exact-revision request-evidence decision uses password and fresh OTP",
+      "result": "PASS"
+    },
+    {
+      "name": "Signing OTP replay cannot record another decision",
+      "result": "PASS"
+    },
+    {
+      "name": "Controlled export blocked on unresolved evidence; unapproved packet succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "Source change invalidates quality and AI dependencies without rewriting decisions",
+      "result": "PASS"
+    },
+    {
+      "name": "Historical snapshot reconstructs a pre-change version",
+      "result": "PASS"
+    },
+    {
+      "name": "Unrelated user cannot read tenant workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Encrypted provider value round trips without plaintext storage",
+      "result": "PASS"
+    },
+    {
+      "name": "Provider transient failures use initial attempt plus three bounded retries",
+      "result": "PASS"
+    },
+    {
+      "name": "Provider authorization failure does not retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Model candidate cannot replace exact source text or approve a decision",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner assignment retains administration while read-only membership cannot save",
+      "result": "PASS"
+    },
+    {
+      "name": "Binary transcription revision retains exact original bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "Frozen case rejects invented expected text before any inference",
+      "result": "PASS"
+    },
+    {
+      "name": "Expired intended use cannot be approved even with old passing tests",
+      "result": "PASS"
+    },
+    {
+      "name": "Signed frozen test case is bound to exact current source and reviewer",
+      "result": "PASS"
+    },
+    {
+      "name": "Paired evaluation executes two models twice and saves exact expectations",
+      "result": "PASS"
+    },
+    {
+      "name": "Paired provider failures remain failed critical cases and save first break",
+      "result": "PASS"
+    },
+    {
+      "name": "Evidence backup includes current and historical originals with checksums",
+      "result": "PASS"
+    },
+    {
+      "name": "Corrupt original blocks restore without overwriting workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Verified copy restore preserves files, scopes permissions and is idempotent",
+      "result": "PASS"
+    },
+    {
+      "name": "Logout invalidates the app session",
+      "result": "PASS"
+    }
+  ]
+}

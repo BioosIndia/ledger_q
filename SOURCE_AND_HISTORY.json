@@ -1,0 +1,11 @@
+{
+  "project": "LEDGER-Q",
+  "previous_full_zip": "LEDGER_Q_Full_Final_Source_and_Proof.zip",
+  "previous_full_zip_sha256": "dc8179d3a2c4a94635346f2adbe60844ef5c6a0098bc764760c1f4afda295985",
+  "previous_commit": "cdb16fc911eb09da3e0f907b0b6c3a4a5668248e",
+  "current_published_commit": "5544d6892bb90edbace6c7385a9fadcacfa33d35",
+  "current_source_files": 199,
+  "preserved_previous_non_source_files": 84,
+  "history_boundary": "Earlier proofs/builds are historical; current source is only source/",
+  "production_access": "owner-private; unchanged"
+}

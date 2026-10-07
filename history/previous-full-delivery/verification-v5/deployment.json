@@ -1,0 +1,15 @@
+{
+  "id": "appgdep_6ac54adc00f48191afea2738f1275eb5",
+  "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+  "title": "PRAMANEX LEDGER-Q | Quality & AI Assurance",
+  "version_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73~appgver_d90a794e03d88191a879548fe4da640a",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://ledger-q.r4dewangan.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ac4de4b7ba881918706f67b0d056d73",
+  "failure_message": null,
+  "env_set_revision": 2,
+  "updated_at": "2026-10-06T19:24:30.354217+00:00"
+}

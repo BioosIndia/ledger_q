@@ -1,0 +1,13 @@
+{
+  "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+  "version_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73~appgver_c7a2d0b5ae9c81919ce882dbe8b4b000",
+  "commit_sha": "4b614480081bf1a7c2302cbf6831df1d82e0d661",
+  "status": "succeeded",
+  "url": "https://ledger-q.r4dewangan.chatgpt.site",
+  "audience": "owner-private",
+  "software_checks": 39,
+  "hosted_api_checks": 8,
+  "browser_visual_qa": "unavailable",
+  "live_provider_inference": "not configured / not claimed",
+  "professional_validation": "not established"
+}

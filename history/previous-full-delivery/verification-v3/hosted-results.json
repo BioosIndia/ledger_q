@@ -1,0 +1,212 @@
+{
+  "at": "2026-10-06T18:52:01.757990+00:00",
+  "scope": "Actual hosted HTTP API checks and synthetic-only provider tests. No browser visual or qualified professional validation. Only purpose-created synthetic QA accounts/workspaces; no real user impersonation or human approval.",
+  "results": [
+    {
+      "name": "New hosted account starts with an empty private workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit proof selection persists a separate private copy",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini native key is configured without exposing its value",
+      "result": "PASS"
+    },
+    {
+      "name": "Resolved Gemini identity receipt",
+      "result": "PASS",
+      "models": [
+        "gemini-3.5-flash-lite",
+        "gemini-3.8-flash"
+      ],
+      "actualModels": [
+        "gemini-3.5-flash-lite",
+        "gemini-3.8-flash"
+      ],
+      "observations": [
+        {
+          "model": "gemini-3.5-flash-lite",
+          "actualModel": "gemini-3.5-flash-lite",
+          "pass": true,
+          "usage": {
+            "promptTokenCount": 36,
+            "candidatesTokenCount": 24,
+            "totalTokenCount": 60,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 36
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "RECEIVED",
+              "provider": "gemini",
+              "model": "gemini-3.5-flash-lite",
+              "actualModel": "gemini-3.5-flash-lite",
+              "latencyMs": 603,
+              "tokens": {
+                "promptTokenCount": 36,
+                "candidatesTokenCount": 24,
+                "totalTokenCount": 60,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 36
+                  }
+                ],
+                "serviceTier": "standard"
+              },
+              "at": "2026-10-06T18:50:00.127Z"
+            }
+          ]
+        },
+        {
+          "model": "gemini-3.8-flash",
+          "actualModel": "gemini-3.8-flash",
+          "pass": true,
+          "usage": {
+            "promptTokenCount": 36,
+            "candidatesTokenCount": 14,
+            "totalTokenCount": 193,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 36
+              }
+            ],
+            "thoughtsTokenCount": 143,
+            "serviceTier": "standard"
+          },
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "RECEIVED",
+              "provider": "gemini",
+              "model": "gemini-3.8-flash",
+              "actualModel": "gemini-3.8-flash",
+              "latencyMs": 6859,
+              "tokens": {
+                "promptTokenCount": 36,
+                "candidatesTokenCount": 14,
+                "totalTokenCount": 193,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 36
+                  }
+                ],
+                "thoughtsTokenCount": 143,
+                "serviceTier": "standard"
+              },
+              "at": "2026-10-06T18:50:06.986Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Two distinct actual Gemini models respond and saved readback verifies both",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual Gemini planner-specialist-review run saves checkpoints and human HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual Gemini saved run receipt",
+      "result": "PASS",
+      "workspaceId": "WS-3c318f4c-76c",
+      "runId": "RUN-fedf623d-85c",
+      "status": "HOLD",
+      "phase": 4,
+      "specialists": [
+        "Requirement mapping",
+        "Deviation / OOS",
+        "Evidence / audit verifier"
+      ],
+      "models": [
+        "gemini-3.5-flash-lite",
+        "gemini-3.8-flash"
+      ],
+      "attemptCount": 6,
+      "tokens": [
+        {
+          "promptTokenCount": 125,
+          "candidatesTokenCount": 88,
+          "totalTokenCount": 213,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 125
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        {
+          "promptTokenCount": 464,
+          "candidatesTokenCount": 226,
+          "totalTokenCount": 690,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 464
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        {
+          "promptTokenCount": 466,
+          "candidatesTokenCount": 360,
+          "totalTokenCount": 826,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        {
+          "promptTokenCount": 467,
+          "candidatesTokenCount": 405,
+          "totalTokenCount": 872,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 467
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        {
+          "promptTokenCount": 1462,
+          "candidatesTokenCount": 53,
+          "totalTokenCount": 2462,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1462
+            }
+          ],
+          "thoughtsTokenCount": 947,
+          "serviceTier": "standard"
+        }
+      ]
+    },
+    {
+      "name": "Another explicitly created workspace stays fresh after proof and AI work",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted logout invalidates session",
+      "result": "PASS"
+    }
+  ],
+  "passed": 9
+}

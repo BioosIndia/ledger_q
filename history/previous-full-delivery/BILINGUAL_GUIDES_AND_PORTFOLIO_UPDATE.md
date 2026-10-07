@@ -1,0 +1,1 @@
+Current narrated guide files are in source/public/videos. Choose English/Hindi on the landing page. Four-party portfolio/project release status is in COMPLETED_AND_PENDING.md. Guides reconstruct an explanatory synthetic workflow; they are not live browser captures or performance benchmarks.

@@ -1,0 +1,216 @@
+{
+  "at": "2026-10-06T18:42:50.154531+00:00",
+  "scope": "Actual hosted HTTP API checks and synthetic-only provider tests. No browser visual or qualified professional validation. Only purpose-created synthetic QA accounts/workspaces; no real user impersonation or human approval.",
+  "results": [
+    {
+      "name": "Hosted storage and encryption bindings",
+      "result": "PASS"
+    },
+    {
+      "name": "Original public proof persists separately on HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "New hosted account starts with an empty private workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit proof selection persists a separate private copy",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini native key is configured without exposing its value",
+      "result": "PASS"
+    },
+    {
+      "name": "Resolved Gemini identity receipt",
+      "result": "FAILED",
+      "models": [
+        "gemini-3.5-flash-lite",
+        "gemini-omni-1.1-flash"
+      ],
+      "actualModels": [
+        "gemini-3.5-flash-lite",
+        null
+      ],
+      "observations": [
+        {
+          "model": "gemini-3.5-flash-lite",
+          "actualModel": "gemini-3.5-flash-lite",
+          "pass": true,
+          "usage": {
+            "promptTokenCount": 36,
+            "candidatesTokenCount": 15,
+            "totalTokenCount": 51,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 36
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "RECEIVED",
+              "provider": "gemini",
+              "model": "gemini-3.5-flash-lite",
+              "actualModel": "gemini-3.5-flash-lite",
+              "latencyMs": 4934,
+              "tokens": {
+                "promptTokenCount": 36,
+                "candidatesTokenCount": 15,
+                "totalTokenCount": 51,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 36
+                  }
+                ],
+                "serviceTier": "standard"
+              },
+              "at": "2026-10-06T18:41:52.814Z"
+            }
+          ]
+        },
+        {
+          "model": "gemini-omni-1.1-flash",
+          "pass": false,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:52.941Z"
+            },
+            {
+              "attempt": 2,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.156Z"
+            },
+            {
+              "attempt": 3,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.460Z"
+            },
+            {
+              "attempt": 4,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.968Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Actual Gemini connection checks",
+      "result": "FAILED",
+      "models": [
+        "gemini-3.5-flash-lite",
+        "gemini-omni-1.1-flash"
+      ],
+      "state": "EXHAUSTED",
+      "observations": [
+        {
+          "model": "gemini-3.5-flash-lite",
+          "actualModel": "gemini-3.5-flash-lite",
+          "pass": true,
+          "usage": {
+            "promptTokenCount": 36,
+            "candidatesTokenCount": 15,
+            "totalTokenCount": 51,
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 36
+              }
+            ],
+            "serviceTier": "standard"
+          },
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "RECEIVED",
+              "provider": "gemini",
+              "model": "gemini-3.5-flash-lite",
+              "actualModel": "gemini-3.5-flash-lite",
+              "latencyMs": 4934,
+              "tokens": {
+                "promptTokenCount": 36,
+                "candidatesTokenCount": 15,
+                "totalTokenCount": 51,
+                "promptTokensDetails": [
+                  {
+                    "modality": "TEXT",
+                    "tokenCount": 36
+                  }
+                ],
+                "serviceTier": "standard"
+              },
+              "at": "2026-10-06T18:41:52.814Z"
+            }
+          ]
+        },
+        {
+          "model": "gemini-omni-1.1-flash",
+          "pass": false,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:52.941Z"
+            },
+            {
+              "attempt": 2,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.156Z"
+            },
+            {
+              "attempt": 3,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.460Z"
+            },
+            {
+              "attempt": 4,
+              "status": "FAILED",
+              "provider": "gemini",
+              "model": "gemini-omni-1.1-flash",
+              "reason": "PROVIDER_FAILURE",
+              "at": "2026-10-06T18:41:53.968Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Another explicitly created workspace stays fresh after proof and AI work",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted logout invalidates session",
+      "result": "PASS"
+    }
+  ],
+  "passed": 7
+}

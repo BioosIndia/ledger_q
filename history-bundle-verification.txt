@@ -1,0 +1,4 @@
+The bundle contains this ref:
+5544d6892bb90edbace6c7385a9fadcacfa33d35 HEAD
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1

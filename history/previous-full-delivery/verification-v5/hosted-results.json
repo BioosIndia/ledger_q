@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-06T19:23:38.576726+00:00",
+  "scope": "Actual hosted API checks on purpose-created synthetic accounts. No browser UI, live provider calls, real user evidence or human approvals.",
+  "results": [
+    {
+      "name": "New hosted account contains no evidence, proof or jobs",
+      "result": "PASS"
+    },
+    {
+      "name": "Default entry reuses that empty private workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Populated proof remains separate from the new zero-record entry",
+      "result": "PASS"
+    },
+    {
+      "name": "Default entry never clears the existing proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Returning login can enter the same empty dashboard while saved proof stays available",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted logout clears the app session",
+      "result": "PASS"
+    }
+  ],
+  "passed": 6
+}

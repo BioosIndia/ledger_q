@@ -1,0 +1,22 @@
+{
+  "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+  "checkout_path": "/workspace/sites/ledger-q",
+  "commit_sha": "cdb16fc911eb09da3e0f907b0b6c3a4a5668248e",
+  "archive": "/workspace/scratch/61995385ee8d/finalization/lq-release-deploy.tar.gz",
+  "deployment": {
+    "id": "appgdep_6ac552e86bc48191880c5f0776a24dad",
+    "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+    "title": "PRAMANEX LEDGER-Q | Quality & AI Assurance",
+    "version_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73~appgver_7a38fa6b9af08191a823d831f53ab0ff",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://ledger-q.r4dewangan.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac4de4b7ba881918706f67b0d056d73",
+    "failure_message": null,
+    "env_set_revision": 2,
+    "updated_at": "2026-10-06T19:58:55.784727+00:00"
+  },
+  "scope": "Native deployment succeeded; production availability is separate from professional validation."
+}
