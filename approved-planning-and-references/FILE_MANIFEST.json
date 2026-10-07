@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "path": "APPROVED_DESIGN_AND_PREBUILD_DECISIONS.md",
+      "bytes": 15056,
+      "sha256": "1a19863be9799fdc381f801548e48c306b4196075c87afe54cb2d8cdf7a03917"
+    },
+    {
+      "path": "DELIVERY_VERIFICATION.json",
+      "bytes": 2017,
+      "sha256": "9a117c5cf97ccb4bc6abb1e34e71ee1b7ddedd74c2d59c4fa122fae83e61cbca"
+    },
+    {
+      "path": "LEDGER_Q_Feature_Traceability.csv",
+      "bytes": 5767,
+      "sha256": "74ceb36b9d8fe0546bc23d504068775299135b765113d75962a1487f8790aee8"
+    },
+    {
+      "path": "LEDGER_Q_Flow_01.mmd",
+      "bytes": 480,
+      "sha256": "1477819b545ff12b9afad87ad4983424801da9bc98ccc1d30e243838f2e61e37"
+    },
+    {
+      "path": "LEDGER_Q_Flow_02.mmd",
+      "bytes": 1106,
+      "sha256": "6b527ca7e3b542b08c6405951789c0099fc1a996782bd7e5855a94b5dfec4e12"
+    },
+    {
+      "path": "LEDGER_Q_Flow_03.mmd",
+      "bytes": 623,
+      "sha256": "295eab42e79798a2130ed85f3974d95667fac9e8d90733e2d38288ceb5d3f57b"
+    },
+    {
+      "path": "LEDGER_Q_Full_Mapping_and_Flowcharts.md",
+      "bytes": 41469,
+      "sha256": "7ad93e60bf21c56720126ecf40ac06fad846f6406fc763ffb11aac2bf2b14433"
+    },
+    {
+      "path": "LEDGER_Q_Full_Mapping_and_Flowcharts.pdf",
+      "bytes": 287382,
+      "sha256": "4cee93254d9a16a4bb45fc3e435dee7ee8cfa75e75a8d02538a32274e493f910"
+    },
+    {
+      "path": "LEDGER_Q_Master_Architecture.png",
+      "bytes": 190127,
+      "sha256": "2fb045d47e9b0e467111c8ac8108844702373902e6bf220ef40193c157283dc9"
+    },
+    {
+      "path": "LEDGER_Q_Master_Rulebook.md",
+      "bytes": 12739,
+      "sha256": "d422540b350e273c7b17210d78a929f962773264f0988cc52e28f94f2c157762"
+    },
+    {
+      "path": "LEDGER_Q_Master_Rulebook.pdf",
+      "bytes": 56264,
+      "sha256": "9d30b809e0f4db0c49c12acee5874abbfe2282363cfbdce880d2e371c41d3dc4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1058,
+      "sha256": "5e9dfc1598bdd2ab74d409297a327245241d32317abc4faddcbbda76f3b6fa0f"
+    },
+    {
+      "path": "analysis-aids/README.md",
+      "bytes": 300,
+      "sha256": "4270a4c39c8b7f99cc6e882fd4ef53feb7b1533413b3b6ccd7be9c7141566a1e"
+    },
+    {
+      "path": "analysis-aids/generate-reports-original.py",
+      "bytes": 7669,
+      "sha256": "c3fb6d8e668998d60394f99fa42dddbe38de8e30a65dfec3bdd763322980734d"
+    },
+    {
+      "path": "analysis-aids/video1-timeline-samples.jpg",
+      "bytes": 305726,
+      "sha256": "ea047144287119b37f222044dc6a969d33e1f773472d34acc04006833d3b3d48"
+    },
+    {
+      "path": "analysis-aids/video2-timeline-samples.jpg",
+      "bytes": 1001382,
+      "sha256": "57a723fd74fa67a8231da1cd32fd4afc6eaabbd83dddfff974b9419a9c0be454"
+    },
+    {
+      "path": "analysis-aids/video3-timeline-samples.jpg",
+      "bytes": 351922,
+      "sha256": "c7b2d80e4358332b2ad1cacce6b5eab4b2a08e64b49f996eb9d0b23f79f585f5"
+    },
+    {
+      "path": "approved-design-previews/01_Landing.png",
+      "bytes": 1803073,
+      "sha256": "aa62f13e4f90e6dc81de6f997245f6b8a1821827733a788b166cd27d3223f644"
+    },
+    {
+      "path": "approved-design-previews/02_Assurance_Dashboard.png",
+      "bytes": 1491013,
+      "sha256": "404ca7bca955de7b898ebda53eaf1ef18483e302d1c8e0c0767411ba86ffd859"
+    },
+    {
+      "path": "approved-design-previews/03_Quality_Event_Workbench.png",
+      "bytes": 1537566,
+      "sha256": "c362dd5703632c8cc1b38bace6ce9bb0764b19cf490d431dcbb9d70e59f452b7"
+    },
+    {
+      "path": "approved-design-previews/04_Change_Impact_Human_Review.png",
+      "bytes": 1460545,
+      "sha256": "e6e330ed6d888fc8184795d47f25707884c3d433939ee7af66d376f1ab2366dc"
+    },
+    {
+      "path": "references/PRAMANEX_LEDGER_Q_Enterprise_SaaS_Master_Blueprint(3)(3).pdf",
+      "bytes": 116460,
+      "sha256": "f08dd6bb3fca045b6890bf62468e42743780cf51601bec17709077759ba555a2"
+    },
+    {
+      "path": "references/Screen Recording 2026-10-05 182302.mp4",
+      "bytes": 2335762,
+      "sha256": "ccaae515b6a6eb026c2838612158281ea0040827169faf49a3efbb17675401f0"
+    },
+    {
+      "path": "references/Screen Recording 2026-10-05 182549.mp4",
+      "bytes": 5194565,
+      "sha256": "3f10f9d056ed8dbdbcba85b074f2eca77150b205601d3d2e8582807bc70402c8"
+    },
+    {
+      "path": "references/Screen Recording 2026-10-05 182643.mp4",
+      "bytes": 2479410,
+      "sha256": "b30bad9e71195516614339d3b49580648236100f5a8c198949915f06a344d2a5"
+    }
+  ],
+  "note": "Self-excluding inventory; all listed entries verified before packaging."
+}

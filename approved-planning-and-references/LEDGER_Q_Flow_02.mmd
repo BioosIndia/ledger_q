@@ -1,0 +1,23 @@
+flowchart TD
+    S["Permitted original and version · L01–L05"] --> Q["Requirement / SOP / gap · F01–F04"]
+    Q --> E["Deviation / OOS / risk · F05–F07"]
+    E --> C["Change / CAPA / training / owner · F08–F10, F13"]
+    U["AI use / model / context · F16"] --> P["Pinned run provenance · F17"]
+    P --> T["Frozen grounding / edge / paired tests · F18–F19"]
+    C --> G["Shared evidence graph and debt · L06–L07"]
+    T --> G
+    G --> K{"Evidence current and sufficient?"}
+    K -->|No| H["UNKNOWN / HOLD · request evidence"]
+    H --> S
+    K -->|Yes| R["Named QA review and signing · F14"]
+    R --> J{"Role / factor / reason / revision valid?"}
+    J -->|No| V["Reauthenticate / re-review / HOLD"]
+    V --> R
+    J -->|Yes| O["Recorded decision and owned work"]
+    O --> F["Effectiveness / inspection / trends · F09, F11–F12"]
+    F --> A["Exact-version passport / replay / export · F15"]
+    A --> M["Monitor and retest · F20"]
+    M --> X{"Material quality or AI change?"}
+    X -->|Yes| Z["Affected dependencies stale / reopened · F08/F20"]
+    Z --> G
+    X -->|No| A

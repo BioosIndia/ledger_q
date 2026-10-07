@@ -1,0 +1,55 @@
+{
+  "preparedAt": "2026-10-06",
+  "scope": "Source export and planning artifact verification; no app changes or deployment",
+  "packages": [
+    {
+      "name": "BEACON_GitHub_Complete_v40.zip",
+      "version": 40,
+      "sourceCommit": "430be2d4079dbf00999b6824387c73eb20d875d2",
+      "sourceFilesByteExact": 336,
+      "archiveFiles": 367,
+      "bytes": 22324720,
+      "sha256": "95f64eaf1be5c3168334a73b2869f1101667d5e867ebf1f451864c5113a028bc",
+      "zipCRC": "PASS",
+      "gitBundle": "PASS",
+      "credentialPatternScan": "PASS; also scanned reachable source history blobs",
+      "DockerImageBuilt": false,
+      "newGenuineBrowserCapture": false
+    },
+    {
+      "name": "FORGE_GitHub_Complete_v13.zip",
+      "version": 13,
+      "sourceCommit": "97a2c8ab8cb4322ccf18752faa7791fcaa43d73d",
+      "sourceFilesByteExact": 322,
+      "archiveFiles": 362,
+      "bytes": 43498284,
+      "sha256": "0b7d651e70e56117fb2c0abae4bc4139dcc58989eb7c0005cc135b7039efe146",
+      "zipCRC": "PASS",
+      "gitBundle": "PASS",
+      "credentialPatternScan": "PASS; also scanned reachable source history blobs",
+      "DockerImageBuilt": false,
+      "newGenuineBrowserCapture": false
+    }
+  ],
+  "ledgerQ": {
+    "pdfPagesReviewed": 16,
+    "referenceVideos": 3,
+    "canonicalFeatures": 20,
+    "sharedLayers": 12,
+    "proposedChildControls": 5,
+    "challengeControls": 4,
+    "boundedSpecialists": 7,
+    "dataObjects": 16,
+    "PDF_APIEndpoints": 12,
+    "testFamilies": 12,
+    "maturity": "SPECIFIED / NOT BUILT IN THIS TASK",
+    "referenceReview": "Full timelines at 0.5-second cadence plus detailed frames; no every-frame playback claim",
+    "zipCRC": "PASS",
+    "approvedDesignPreviews": 4,
+    "latestDecisionsFile": "APPROVED_DESIGN_AND_PREBUILD_DECISIONS.md",
+    "buildApprovalPending": true,
+    "appImplementationStarted": false,
+    "zeroErrorGuarantee": false,
+    "packageScope": "Consolidated source requirements, references, generated approved previews and pre-build decisions only"
+  }
+}

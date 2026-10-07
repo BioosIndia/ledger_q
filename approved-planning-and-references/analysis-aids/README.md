@@ -1,0 +1,1 @@
+Timeline sheets sample the complete supplied clips at 0.5-second cadence; they are analysis aids, not product UI captures. Report generator is the original creation script with original workspace paths, included for provenance; editable Markdown, CSV and Mermaid files are portable source artifacts.

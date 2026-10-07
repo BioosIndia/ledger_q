@@ -1,0 +1,13 @@
+flowchart TD
+    A["Parent authorizes and pins revision"] --> B["Version / parse / route bounded specialists"]
+    B --> C{"Provider task succeeds?"}
+    C -->|Yes| D["Schema / evidence / independent checks"]
+    C -->|Eligible failure| E["3 bounded retries with backoff"]
+    E --> F{"Recovered with current permission?"}
+    F -->|Yes| D
+    F -->|No| G["Visible exhausted / DLQ"]
+    G --> H["Critical work continues in manual / deterministic mode"]
+    D --> I{"Sufficient current evidence?"}
+    I -->|No| J["HOLD and owner / evidence request"]
+    I -->|Yes| K["Persist candidate and await human review"]
+    H --> K
