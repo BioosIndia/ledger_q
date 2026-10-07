@@ -1,0 +1,14 @@
+export const enc=new TextEncoder();
+export function hex(b:ArrayBuffer|Uint8Array){return [...new Uint8Array(b as ArrayBuffer)].map(x=>x.toString(16).padStart(2,'0')).join('');}
+export async function hash(s:string|ArrayBuffer){return hex(await crypto.subtle.digest('SHA-256',typeof s==='string'?enc.encode(s):s));}
+export const random=()=>hex(crypto.getRandomValues(new Uint8Array(32)));
+export async function passwordHash(password:string,salt:string){const key=await crypto.subtle.importKey('raw',enc.encode(password),'PBKDF2',false,['deriveBits']);return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt:enc.encode(salt),iterations:100000,hash:'SHA-256'},key,256));}
+export function equal(a:string,b:string){let d=a.length^b.length;for(let i=0;i<Math.max(a.length,b.length);i++)d|=(a.charCodeAt(i)||0)^(b.charCodeAt(i)||0);return d===0;}
+async function encryptionKey(secret:string){if(!secret||secret.length<40)throw new Error('Secure encryption is not configured.');return crypto.subtle.importKey('raw',await crypto.subtle.digest('SHA-256',enc.encode(secret)),{name:'AES-GCM'},false,['encrypt','decrypt']);}
+export async function seal(value:string,secret:string){const iv=crypto.getRandomValues(new Uint8Array(12));const data=await crypto.subtle.encrypt({name:'AES-GCM',iv},await encryptionKey(secret),enc.encode(value));return hex(iv)+'.'+hex(data);}
+export async function unseal(value:string,secret:string){const [iv,data]=value.split('.').map(x=>Uint8Array.from(x.match(/../g)!.map(y=>parseInt(y,16))));return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv},await encryptionKey(secret),data));}
+const alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+export function totpSecret(){const bytes=crypto.getRandomValues(new Uint8Array(20));let bits='';for(const b of bytes)bits+=b.toString(2).padStart(8,'0');return bits.match(/.{1,5}/g)!.map(x=>alphabet[parseInt(x.padEnd(5,'0'),2)]).join('');}
+export async function otp(secret:string,step=Math.floor(Date.now()/30000)){let bits='';for(const c of secret)bits+=alphabet.indexOf(c).toString(2).padStart(5,'0');const bytes=Uint8Array.from(bits.match(/.{8}/g)!.map(b=>parseInt(b,2)));const msg=new ArrayBuffer(8);new DataView(msg).setBigUint64(0,BigInt(step));const key=await crypto.subtle.importKey('raw',bytes,{name:'HMAC',hash:'SHA-1'},false,['sign']);const result=new Uint8Array(await crypto.subtle.sign('HMAC',key,msg));const off=result[19]&15;const val=((result[off]&127)<<24)|(result[off+1]<<16)|(result[off+2]<<8)|result[off+3];return String(val%1000000).padStart(6,'0');}
+export async function verifyOtp(secret:string,code:string,lastStep=0){const step=Math.floor(Date.now()/30000);for(const v of [step-1,step,step+1])if(v>lastStep&&equal(await otp(secret,v),code))return v;return 0;}
+export function cleanText(v:unknown,max=20000){if(typeof v!=='string'||v.length>max)throw new Error('Text is missing or too long.');return v.trim();}
