@@ -1,0 +1,27 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import ts from 'typescript';
+import assert from 'node:assert/strict';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+mkdirSync('.test-build',{recursive:true});
+const compiled=ts.transpileModule(readFileSync('components/assurance-workbench.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText;
+writeFileSync('.test-build/workbench.js',compiled.replace("'./evidence-journey'","'./evidence-journey.js'"));
+writeFileSync('.test-build/evidence-journey.js',ts.transpileModule(readFileSync('components/evidence-journey.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText);
+const {EvidenceJourney,EvidenceMotion}=await import('../.test-build/evidence-journey.js');
+const {scenario}=await import('../.test-build/engine.js');
+const {QualityWorkbench,EvidenceMap,HumanReview,AuditWorkspace}=await import('../.test-build/workbench.js');
+const state=scenario('presentation-case');
+const props={state,selected:null,revision:7,editable:false,busy:'',roles:[],inspect:()=>{},open:()=>{},details:()=>{},link:s=>'/'+s+'?demo=1'};
+const results=[];
+function check(name,fn){fn();results.push({name,result:'PASS'});console.log('PASS '+name);}
+const html=Component=>renderToStaticMarkup(React.createElement(Component,props));
+check('Quality workbench preserves conflicting original/transcribed values and HOLD',()=>{const s=html(QualityWorkbench);assert(s.includes('94.2'));assert(s.includes('99.1'));assert(s.includes('HOLD'));assert(!s.includes('92.1'));assert(s.includes('repeat-test rationale'));});
+check('Read-only workbench cannot offer an enabled signing action',()=>{const s=html(QualityWorkbench);assert(/disabled=""[^>]*>Request evidence/.test(s));assert(/disabled=""[^>]*>Record review/.test(s));});
+check('Map draws every saved dependency and identifies exact source revision',()=>{const s=html(EvidenceMap);assert.equal((s.match(/<div class="evidence-map"><svg[\s\S]*?<\/svg>/)[0].match(/<path d="M/g)||[]).length,state.records.filter(r=>r.kind==='dependency_edges').length);assert(s.includes('SRC-SOP-014'));assert(s.includes('Workspace r7'));});
+check('Owner-only role cannot enable reviewer signing in review dock',()=>{const s=renderToStaticMarkup(React.createElement(HumanReview,{...props,editable:true,roles:['Owner']}));assert(s.includes('separate reviewer role'));assert(/disabled=""[^>]*>Request evidence/.test(s));});
+check('Audit workspace keeps packet state and human approval requirement visible',()=>{const s=html(AuditWorkspace);assert(s.includes('remains unapproved'));assert(s.includes('server-side'));assert(s.includes('Prepare evidence packet'));assert(s.includes('disabled=""'));});
+check('Empty quality workspace explains missing source rather than inventing a case',()=>{const s=renderToStaticMarkup(React.createElement(QualityWorkbench,{...props,state:{...state,records:[]}}));assert(s.includes('No quality event recorded'));assert(!s.includes('94.2'));});
+check('Fresh outcome view contains zero saved counts and directs to originals, never preloads proof',()=>{const s=renderToStaticMarkup(React.createElement(EvidenceJourney,{records:[],revision:1,link:x=>'/'+x}));assert(s.includes('Add an original source'));assert.equal((s.match(/class="outcome-count">0/g)||[]).length,4);assert(!s.includes('94.2'));assert(!s.includes('approved result'));});
+check('Saved outcome view retains uncertainty and avoids treating historical decisions as approval',()=>{const s=renderToStaticMarkup(React.createElement(EvidenceJourney,{records:state.records,revision:7,link:x=>'/'+x}));assert(s.includes('Inspect gaps before requesting review'));assert(s.includes('not current approval'));assert(s.includes('not automatically approved'));assert(s.includes('r7'));});
+check('Motion model is decorative and does not imply saved facts or approval',()=>{const s=renderToStaticMarkup(React.createElement(EvidenceMotion,{priority:true}));assert(s.includes('aria-hidden="true"'));assert(s.includes('alt=""'));assert(s.includes('plane-back'));assert(s.includes('plane-front'));assert(s.includes('fetchPriority="high"')||s.includes('fetchpriority="high"'));});
+writeFileSync('docs/verification/presentation-results.json',JSON.stringify({at:new Date().toISOString(),scope:'Server-rendered presentation checks against synthetic persisted record shapes; not browser visual or interaction QA.',results,passed:results.length},null,2));

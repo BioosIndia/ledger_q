@@ -1,0 +1,1 @@
+Dockerfile is an optional local test recipe. No container image has been built, tested or published in this environment. Production runs as the Sites Worker with managed D1/R2 bindings, not inside Docker.

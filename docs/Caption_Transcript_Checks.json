@@ -1,0 +1,26 @@
+[
+  {
+    "project": "forge",
+    "language": "en",
+    "cues": 24,
+    "chapters": 8
+  },
+  {
+    "project": "forge",
+    "language": "hi",
+    "cues": 26,
+    "chapters": 8
+  },
+  {
+    "project": "ledger",
+    "language": "en",
+    "cues": 24,
+    "chapters": 8
+  },
+  {
+    "project": "ledger",
+    "language": "hi",
+    "cues": 27,
+    "chapters": 8
+  }
+]

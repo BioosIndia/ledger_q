@@ -1,0 +1,24 @@
+[
+  {
+    "file": "ledger-walkthrough-en.mp4",
+    "seconds": 120,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audio": "AAC, English or Hindi neural narration",
+    "bytes": 2929880,
+    "captionTiming": "Scene-aligned phrase captions; not word-level forced alignment",
+    "scope": "Animated saved synthetic-case guide, not browser recording or measured product latency"
+  },
+  {
+    "file": "ledger-walkthrough-hi.mp4",
+    "seconds": 120,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audio": "AAC, English or Hindi neural narration",
+    "bytes": 3061000,
+    "captionTiming": "Scene-aligned phrase captions; not word-level forced alignment",
+    "scope": "Animated saved synthetic-case guide, not browser recording or measured product latency"
+  }
+]
