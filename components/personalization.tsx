@@ -1,0 +1,12 @@
+"use client";
+import {useEffect,useState} from 'react';
+import {Button} from '@/components/ui/button';
+import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue} from '@/components/ui/select';
+import {defaultPreferences as defaults,readPreferences,type Preferences} from '@/lib/ledger/preferences';
+function apply(p:Preferences){Object.assign(document.documentElement.dataset,{lqDensity:p.density,lqAccent:p.accent,lqText:p.text,lqMotion:p.motion});}
+export function usePreferences(userId?:string){const [preferences,setPreferences]=useState<Preferences>(defaults);const [message,setMessage]=useState('');const key='ledger-q:preferences:'+userId;
+ useEffect(()=>{let p=defaults;try{p=readPreferences(JSON.parse(localStorage.getItem(key)||'{}'));}catch{}setPreferences(p);apply(p);return()=>{for(const key of ['lqDensity','lqAccent','lqText','lqMotion'])delete document.documentElement.dataset[key];};},[key]);
+ function update(next:Preferences){setPreferences(next);apply(next);try{localStorage.setItem(key,JSON.stringify(next));setMessage('Saved on this browser for this account.');}catch{setMessage('Applied for this visit. Browser storage is unavailable.');}}
+ return {preferences,message,update};
+}
+export function Personalization({preferences,message,update}:ReturnType<typeof usePreferences>){const options=[{key:'density',label:'Layout spacing',options:[['comfortable','Comfortable'],['compact','Compact']]},{key:'accent',label:'Accent color',options:[['blue','Evidence blue'],['cyan','Cyan']]},{key:'text',label:'Reading size',options:[['standard','Standard'],['large','Larger text']]},{key:'motion',label:'Motion preference',options:[['system','Follow device setting'],['reduced','Reduce motion']]}] as const;return <section className="panel personalization"><h2>Personalization</h2><p>Adjust your view. These settings stay in this browser and do not change evidence, permissions or approvals.</p><div className="preferences-grid">{options.map(o=><div className="field" key={o.key}><span id={'pref-'+o.key}>{o.label}</span><Select value={preferences[o.key]} onValueChange={v=>update({...preferences,[o.key]:v})}><SelectTrigger aria-labelledby={'pref-'+o.key}><SelectValue/></SelectTrigger><SelectContent>{o.options.map(([value,label])=><SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div>)}</div><Button className="btn white" onClick={()=>update({...defaults})}>Reset my view</Button>{message&&<p role="status" className="micro">{message}</p>}</section>;}
