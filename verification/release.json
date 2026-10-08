@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-07",
+  "site": "https://ledger-q.r4dewangan.chatgpt.site",
+  "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+  "source_commit": "87a3664a48b28102f663cddee3650dcfe43e9f29",
+  "baseline_commit": "5544d6892bb90edbace6c7385a9fadcacfa33d35",
+  "deployed_version_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73~appgver_b4de395c71d88191ac303ab68cc48dbd",
+  "deployment_status": "succeeded",
+  "scope": "Bounded synthetic working portfolio/MVP. No professional or enterprise validation claim.",
+  "coverage": {
+    "existingCanonicalAreas": 20,
+    "reused": 11,
+    "refined": 24,
+    "added": 5,
+    "deferred": 5
+  },
+  "executedChecks": {
+    "integration-results.json": 86,
+    "extra-feature-checks.json": 37,
+    "presentation-results.json": 9
+  },
+  "outcomeTests": 15,
+  "typecheck": "PASS",
+  "productionBuild": "PASS",
+  "browserQA": "Not performed: required browser capability unavailable.",
+  "liveProviderQA": "No new live inference qualification; deterministic and mocked provider contract tests are labelled."
+}

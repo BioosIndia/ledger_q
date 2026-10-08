@@ -1,0 +1,351 @@
+{
+  "at": "2026-10-07T15:05:44.207Z",
+  "scope": "D1-compatible SQLite/R2-memory API integration + synthetic controls. Not deployed/browser/professional validation.",
+  "passed": 86,
+  "results": [
+    {
+      "name": "Ten-step proof reads saved public evidence and leaves private work untouched",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing public original is a visible checklist gap, never a success",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved read-only public case bootstraps and retains source hashes",
+      "result": "PASS"
+    },
+    {
+      "name": "Public visitor cannot mutate workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "App account creation stores separate synthetic workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Private workspace state readback and owner role boundaries",
+      "result": "PASS"
+    },
+    {
+      "name": "Cross-origin save is rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing CSRF cannot mutate data",
+      "result": "PASS"
+    },
+    {
+      "name": "Source permission is enforced before saving",
+      "result": "PASS"
+    },
+    {
+      "name": "Fresh workspace creation is explicit, private, empty and idempotent",
+      "result": "PASS"
+    },
+    {
+      "name": "Working proof cannot overwrite populated private evidence",
+      "result": "PASS"
+    },
+    {
+      "name": "Original proof requires selection and consent before loading",
+      "result": "PASS"
+    },
+    {
+      "name": "Selected working proof saves separately and import replay never duplicates",
+      "result": "PASS"
+    },
+    {
+      "name": "Default dashboard entry reuses only an empty private workspace and preserves selected proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Default dashboard entry creates empty work when all owned workspaces contain evidence, without clearing them",
+      "result": "PASS"
+    },
+    {
+      "name": "Fresh dashboard entry cannot bypass account authentication or CSRF",
+      "result": "PASS"
+    },
+    {
+      "name": "Personalization accepts display choices only, rejects corrupt stored values and never grants authority",
+      "result": "PASS"
+    },
+    {
+      "name": "Authorized original saved to R2 with exact readback",
+      "result": "PASS"
+    },
+    {
+      "name": "Idempotent source operation does not duplicate original records",
+      "result": "PASS"
+    },
+    {
+      "name": "Exact requirement extraction cites source/version/span",
+      "result": "PASS"
+    },
+    {
+      "name": "Stale expected workspace revision cannot save",
+      "result": "PASS"
+    },
+    {
+      "name": "Unconfigured live AI cannot fake success or transmit data",
+      "result": "PASS"
+    },
+    {
+      "name": "Bounded deterministic team saves planning, specialists and human wait",
+      "result": "PASS"
+    },
+    {
+      "name": "Executed control pack retains expected/actual cases and scope",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner does not imply reviewer authority",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit synthetic reviewer role assignment succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "Real TOTP enrollment requires the current authenticator code",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing CAPA effectiveness blocks signed approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Named exact-revision request-evidence decision uses password and fresh OTP",
+      "result": "PASS"
+    },
+    {
+      "name": "Signing OTP replay cannot record another decision",
+      "result": "PASS"
+    },
+    {
+      "name": "Controlled export blocked on unresolved evidence; unapproved packet succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "Source change invalidates quality and AI dependencies without rewriting decisions",
+      "result": "PASS"
+    },
+    {
+      "name": "Historical snapshot reconstructs a pre-change version",
+      "result": "PASS"
+    },
+    {
+      "name": "Unrelated user cannot read tenant workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Encrypted provider value round trips without plaintext storage",
+      "result": "PASS"
+    },
+    {
+      "name": "Provider transient failures use initial attempt plus three bounded retries",
+      "result": "PASS"
+    },
+    {
+      "name": "Provider authorization failure does not retry",
+      "result": "PASS"
+    },
+    {
+      "name": "Model candidate cannot replace exact source text or approve a decision",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner assignment retains administration while read-only membership cannot save",
+      "result": "PASS"
+    },
+    {
+      "name": "Binary transcription revision retains exact original bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "Frozen case rejects invented expected text before any inference",
+      "result": "PASS"
+    },
+    {
+      "name": "Expired intended use cannot be approved even with old passing tests",
+      "result": "PASS"
+    },
+    {
+      "name": "Signed frozen test case is bound to exact current source and reviewer",
+      "result": "PASS"
+    },
+    {
+      "name": "Paired evaluation executes two models twice and saves exact expectations",
+      "result": "PASS"
+    },
+    {
+      "name": "Extra exact-source facts cannot pass a frozen answer set or escape HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Frozen answers require exact source, version, complete set and no duplicates",
+      "result": "PASS"
+    },
+    {
+      "name": "Malformed, duplicate, stale or gapped candidate citations fail safely",
+      "result": "PASS"
+    },
+    {
+      "name": "Paired provider failures remain failed critical cases and save first break",
+      "result": "PASS"
+    },
+    {
+      "name": "Evidence backup includes current and historical originals with checksums",
+      "result": "PASS"
+    },
+    {
+      "name": "Corrupt original blocks restore without overwriting workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Verified copy restore preserves files, scopes permissions and is idempotent",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini transport uses fixed endpoint, hidden header, JSON and actual usage",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini discovery filters unsupported models and does not leak credentials",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini connection consent and two live mocked model results are saved",
+      "result": "PASS"
+    },
+    {
+      "name": "Two model aliases resolving to one underlying model cannot claim independent connection",
+      "result": "PASS"
+    },
+    {
+      "name": "Unavailable discovered reviewer falls back boundedly and preserves failed attempts",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini saved planner, specialists and independent review preserve HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Live reviewer resolving to the author model is recorded as failed independence and HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Gemini provider auth failures remain failed connection records",
+      "result": "PASS"
+    },
+    {
+      "name": "Provider redirects cannot forward credentials and are not retried",
+      "result": "PASS"
+    },
+    {
+      "name": "Valid-looking truncated JSON cannot count as a successful AI result",
+      "result": "PASS"
+    },
+    {
+      "name": "Transient independent-reviewer outage can use only bounded configured alternatives",
+      "result": "PASS"
+    },
+    {
+      "name": "Authentication denial cannot be bypassed through another reviewer model",
+      "result": "PASS"
+    },
+    {
+      "name": "Empty live facts cannot be promoted to a completed supported outcome",
+      "result": "PASS"
+    },
+    {
+      "name": "Extra proof has a separate saved public workspace and leaves the original unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "Additional public originals are served only from the separate proof workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Public extra proof cannot execute assessments",
+      "result": "PASS"
+    },
+    {
+      "name": "Private extra proof requires explicit synthetic confirmation",
+      "result": "PASS"
+    },
+    {
+      "name": "Confirmed additional proof preserves original binary/source history and saves assessments",
+      "result": "PASS"
+    },
+    {
+      "name": "Real API assessment is saved and read back with exact source versions",
+      "result": "PASS"
+    },
+    {
+      "name": "Idempotent assessment replay returns the original record ID and does not add duplicate records",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing original persists as a held assessment rather than apparent success",
+      "result": "PASS"
+    },
+    {
+      "name": "Computed assessment findings cannot be directly edited into passing state",
+      "result": "PASS"
+    },
+    {
+      "name": "Assessment follow-up creates linked held work rather than a guessed cause",
+      "result": "PASS"
+    },
+    {
+      "name": "Assessment export includes readable findings and the transitive source evidence",
+      "result": "PASS"
+    },
+    {
+      "name": "HOLD assessment cannot be exported as current approved work",
+      "result": "PASS"
+    },
+    {
+      "name": "Unapproved regulatory intake cannot stale local work",
+      "result": "PASS"
+    },
+    {
+      "name": "New typed checks feed the saved existing specialist orchestration without granting approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Rollback rejects absent historical AI use without changing release state",
+      "result": "PASS"
+    },
+    {
+      "name": "Controlled rollback preserves old history and creates a freshly suspended version",
+      "result": "PASS"
+    },
+    {
+      "name": "Downloaded JSON template can be uploaded as an original and assessed without transcription workarounds",
+      "result": "PASS"
+    },
+    {
+      "name": "Verified regulatory intake requires exact local originals then signed human review before affected work reopens",
+      "result": "PASS"
+    },
+    {
+      "name": "Workspace context change invalidates saved assessments without deleting proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner data-handling request preserves audit evidence instead of deleting records",
+      "result": "PASS"
+    },
+    {
+      "name": "Foreign evidence cannot be selected into an assessment",
+      "result": "PASS"
+    },
+    {
+      "name": "Logout invalidates the app session",
+      "result": "PASS"
+    }
+  ]
+}
