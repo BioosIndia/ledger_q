@@ -1,0 +1,11 @@
+PASS Unresolved cause remains honest with qualified human rationale
+PASS Unknown cause without residual controls blocks progression
+PASS CAPA author cannot approve own plan
+PASS Plan cannot be retrospectively approved after implementation evidence
+PASS Observation window blocks premature closure
+PASS Completed window with reviewed plan and actual evidence is reviewable
+PASS Changing effectiveness criterion invalidates plan review
+PASS OOS investigation requires phase 1, phase 2 rationale and retest status
+PASS Failed inbox delivery stays visible and can be retried
+PASS Inbox delivery never claims an email was sent
+{"passed":10,"failed":0,"scope":"Synthetic quality gates and in-app delivery; not professional qualification."}

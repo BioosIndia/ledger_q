@@ -1,0 +1,148 @@
+{
+  "name": "LEDGER-Q",
+  "slug": "ledger-q",
+  "url": "https://ledger-q.r4dewangan.chatgpt.site",
+  "identity": "Controlled sources -> quality conflict -> dependencies -> AI-use boundary -> named review -> evidence report",
+  "case": "Original Drug Q saved synthetic proof: source assay 94.2% versus 99.1% transcription. The additional batch/quality proof is a separate saved public workspace selected with ?demo=extra.",
+  "accent": "#4b80ae",
+  "prep": [
+    "Open /app?demo=1 for the original saved proof. A newly signed-in personal workspace must remain empty; do not load the proof into that fresh workspace by accident.",
+    "Prepare /sources?demo=1, /events?demo=1, /changes?demo=1, /ai-registry?demo=1 and /batch-review?demo=extra in tabs.",
+    "The original and additional proof are separate scopes. Introduce the switch clearly: 'A separate synthetic batch example'. Never join their counts or pretend they represent one real customer batch.",
+    "Public proofs are read-only. Check that an additional saved assessment and Download synthetic report are visible before choosing the last shot. If not, retain the visible evidence gap and use the original audit view."
+  ],
+  "routes": [
+    [
+      "Landing",
+      "/",
+      "Inspect working proof"
+    ],
+    [
+      "Original proof",
+      "/app?demo=1",
+      "Command Center / Controlled Sources / Quality Events / Change & Blast Radius / AI Use & Release"
+    ],
+    [
+      "Human boundary",
+      "/review?demo=1",
+      "Human QA Review"
+    ],
+    [
+      "Original audit",
+      "/audit?demo=1",
+      "Replay & Export; public actions stay read-only"
+    ],
+    [
+      "Additional batch proof",
+      "/batch-review?demo=extra",
+      "Saved findings & next actions -> Inspect checks, evidence and next action -> Download synthetic report"
+    ],
+    [
+      "Additional quality checks",
+      "/quality-checks?demo=extra",
+      "Source-linked saved assessment, not a newly executed live check"
+    ],
+    [
+      "Private work",
+      "/app",
+      "Sign in off-camera and select the explicitly separate working-proof copy if needed"
+    ]
+  ],
+  "shots": [
+    {
+      "time": "00:00-00:12",
+      "title": "Introduce the quality decision problem",
+      "route": "/ -> /app?demo=1",
+      "click": "Show the landing identity and click Inspect working proof. Wait for the saved case to load.",
+      "proof": "LEDGER-Q identity and separate synthetic proof selection.",
+      "cursor": "Rest beside the proof CTA, then move once. Do not cut before the case-load result is visible.",
+      "en": "Quality decisions depend on evidence that stays connected. I am Rahul Dewangan, and LEDGER-Q is my independent work sample for linking quality records, AI-use controls and human review.",
+      "hi": "LEDGER-Q mein quality evidence aur AI assurance connected hain. Inspect working proof se synthetic case kholo. Fresh personal dashboard mein proof already fitted dikhana nahi; dono alag hain."
+    },
+    {
+      "time": "00:12-00:27",
+      "title": "Show the controlled original",
+      "route": "/sources?demo=1",
+      "click": "Click Controlled Sources. Open the laboratory original associated with the conflicting assay and inspect its exact value/version.",
+      "proof": "The permitted original, source identity/version and recorded 94.2% assay.",
+      "cursor": "Point beside the source ID/version and the 94.2% value; leave it visible for four seconds.",
+      "en": "The original laboratory evidence records ninety-four point two percent. Its source identity and version remain attached, so the original can be inspected before a conclusion is made.",
+      "hi": "Original lab evidence mein 94.2% hai. Uska source ID aur version dikhao. Yeh synthetic result hai. Original ko dekhna pehla step hai, dashboard number ko hi final truth nahi maana jaata."
+    },
+    {
+      "time": "00:27-00:43",
+      "title": "Make the quality conflict visible",
+      "route": "/events?demo=1",
+      "click": "Click Quality Events and select the conflicted assay event. Show the original 94.2% and 99.1% transcription together with HOLD and the first-failure/gap notes.",
+      "proof": "Unresolved mismatch, original value retained and missing investigation support.",
+      "cursor": "Point between the two values; finish beside HOLD and stop moving.",
+      "en": "The transcription shows ninety-nine point one percent. That mismatch stays visible and the event remains on HOLD. The original is preserved; missing investigation evidence is not replaced with a guessed cause.",
+      "hi": "Transcription 99.1% hai, original 94.2%. System original ko badal nahi raha. Conflict HOLD par rahta hai. Root cause khud invent nahi karni; missing investigation evidence visibly pending hai."
+    },
+    {
+      "time": "00:43-00:58",
+      "title": "Show what a source change affects",
+      "route": "/changes?demo=1",
+      "click": "Click Change & Blast Radius. Select an existing source or connected node and inspect its saved links/revision. Do not edit the public proof.",
+      "proof": "Saved dependencies and affected records; changed evidence requires renewed review.",
+      "cursor": "Follow one saved edge with a slow pointer movement, then select its node and let the detail remain still.",
+      "en": "The dependency view shows which saved work is connected to the evidence. When a source changes, affected work needs fresh checks and review. Earlier approval cannot silently remain current.",
+      "hi": "Graph ka ek actual link samjhao. Source change hone par downstream work affected ho sakta hai. Purana review automatically current nahi rehna chahiye. Public proof mein change execute karne ka pretend nahi karna."
+    },
+    {
+      "time": "00:58-01:13",
+      "title": "Separate AI-use assurance from batch authority",
+      "route": "/ai-registry?demo=1",
+      "click": "Click AI Use & Release. Inspect AI-QA-01, its intended/excluded use and SUSPENDED state.",
+      "proof": "An AI-use passport, dependency limits and a suspended state; it does not authorize batch release.",
+      "cursor": "Point beside SUSPENDED and the excluded-use text, without covering either.",
+      "en": "AI-use assurance is connected to the same evidence. This example use is suspended, and its limits are explicit. An AI-use record does not authorize a batch decision.",
+      "hi": "AI passport ka intended use aur excluded use dikhao. SUSPENDED actual state hai. AI-use assurance aur medicine/batch release do alag authorities hain; is record se release claim nahi karna."
+    },
+    {
+      "time": "01:13-01:30",
+      "title": "Inspect a separate saved batch assessment",
+      "route": "/batch-review?demo=extra",
+      "click": "Switch to the prepared additional-proof tab. Say that it is a separate synthetic example. Scroll to Saved findings & next actions; expand Inspect checks, evidence and next action on one saved assessment.",
+      "proof": "A saved, server-computed assessment with source references, check results, gaps and next steps.",
+      "cursor": "Point left to right through one check row: Check -> Finding -> Evidence -> Result. Keep status and scope in frame.",
+      "en": "A separate synthetic batch example shows the added assessment workflow. Each saved check displays its finding, evidence and next action. Gaps and missing prerequisites remain visible rather than being converted into readiness.",
+      "hi": "Ab separate extra proof mein switch kar rahe hain; original case ke numbers se mix nahi karna. Ek saved assessment ki row dikhao: check, finding, source evidence aur result. Gaps ko readiness bolna nahi."
+    },
+    {
+      "time": "01:30-01:44",
+      "title": "Return to the named review boundary",
+      "route": "/review?demo=1",
+      "click": "In the original-proof tab click Human QA Review. Select a held record and inspect its source/version and review controls.",
+      "proof": "Named reviewer role, exact record revision and read-only public-proof boundary.",
+      "cursor": "Rest beside the current version and review reason. Do not click a disabled or unauthorized signing button.",
+      "en": "A named reviewer must inspect the exact record revision before a decision is signed. The public proof is read-only. Software checks and AI candidates do not replace qualified Quality judgement.",
+      "hi": "Human QA Review mein exact revision aur source support inspect hota hai. Public proof read-only hai. Reviewer ki role permission alag hai; software pass ya AI candidate final judgement nahi."
+    },
+    {
+      "time": "01:44-01:53",
+      "title": "Open the readable evidence report",
+      "route": "/batch-review?demo=extra -> Download synthetic report",
+      "click": "Return to the selected additional assessment and click Download synthetic report. Open the downloaded/readable HTML and show summary, sources, gaps, next action and unapproved/synthetic scope.",
+      "proof": "The actual saved assessment report with its evidence and review state; HTML can be printed to PDF.",
+      "cursor": "Point beside the report state and next action. Do not crop away the unapproved or synthetic label.",
+      "en": "The readable report carries the finding, source evidence, gaps and next action together. Its synthetic and unapproved status stays visible; it is not automatic batch release.",
+      "hi": "Actual report open karo. Finding ke saath sources aur next action hona chahiye. Synthetic aur unapproved label frame mein rahe. Print-to-PDF possible hai, lekin commercial release certificate nahi ban jaata."
+    },
+    {
+      "time": "01:53-02:00",
+      "title": "Close with quality work that can be checked",
+      "route": "/events?demo=1 or /batch-review?demo=extra",
+      "click": "End on the held finding or readable assessment summary, with the product identity visible.",
+      "proof": "Traceable quality evidence, linked review and no unsupported closure.",
+      "cursor": "Park in a clear corner.",
+      "en": "LEDGER-Q demonstrates my approach to quality work: preserve the evidence, expose the gap, connect the next action and keep the human decision accountable.",
+      "hi": "Closing mein four cheezein bolo: evidence preserve, gap visible, next action clear aur human accountable. Real-user performance ya validation ka claim tabhi jab actual proof ho."
+    }
+  ],
+  "optional": [
+    "Private assessment: sign in -> select your separate proof copy -> Batch Evidence & Readiness -> load additional synthetic proof only after confirmation -> choose saved originals -> Check & save assessment. Show its actual saved ID and readback.",
+    "Evidence-change proof: in a permitted private copy, revise one source, then show affected assessment/approval becoming STALE and requiring fresh review. Keep the earlier history.",
+    "Private export: Evidence & review -> Export readable report. A HOLD packet may be exported as unapproved; current approved output needs the existing exact-revision human gate. No automatic batch disposition is added."
+  ]
+}

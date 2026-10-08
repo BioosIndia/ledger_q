@@ -1,0 +1,28 @@
+/* Progressive, bounded presentation. Content and workflow controls remain stationary. */
+.presentation-progress{position:fixed;inset:0 0 auto;height:2px;z-index:170;pointer-events:none;contain:strict}
+.presentation-progress>div{height:100%;background:var(--presentation-accent);transform:scaleX(0);transform-origin:left;opacity:0;will-change:transform}
+[data-motion-enhanced=true]{transition:opacity .52s ease,transform .62s cubic-bezier(.22,.61,.36,1)}
+[data-motion-enhanced=true][data-motion-enter=waiting]{opacity:.9;transform:translateY(10px)}
+[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-8px)}
+[data-motion-enhanced=true][data-motion-enter=visible],[data-motion-enhanced=true]:focus-within{opacity:1;transform:none}
+[data-motion-stage=true]{transform:perspective(1100px) translate3d(var(--stage-x,0px),var(--stage-y,0px),0) rotateX(var(--stage-rx,0deg)) rotateY(var(--stage-ry,0deg));transform-style:preserve-3d;transform-origin:50% 50%}
+@media(max-width:700px){[data-motion-enhanced=true][data-motion-enter=waiting]{transform:translateY(6px);opacity:.95}}
+@media(prefers-reduced-motion:reduce){.presentation-progress{display:none}[data-motion-enhanced=true],[data-motion-stage=true]{animation:none!important;transition:none!important;transform:none!important;opacity:1!important}}
+
+/* A restrained three-axis evidence sculpture; no motion is applied to saved values. */
+.landing [data-motion-enhanced=true]{animation:none!important}.landing .reveal{opacity:1}
+.evidence-motion{overflow:visible}.motion-sculpture{transform-style:preserve-3d}.motion-floor{opacity:.7}.depth-plane{backdrop-filter:blur(2px)}
+@media(prefers-reduced-motion:no-preference){.motion-sculpture{animation:ledger-evidence-depth 15s cubic-bezier(.45,0,.55,1) infinite!important;will-change:transform}.motion-floor{animation:evidence-shadow 15s ease-in-out infinite}.motion-orbit{animation:orbit-breathe 20s ease-in-out infinite}}
+@keyframes ledger-evidence-depth{0%,100%{transform:translate3d(-3px,2px,-5px) rotateX(-2deg) rotateY(-3deg) rotateZ(-.45deg)}25%{transform:translate3d(1px,-6px,7px) rotateX(1deg) rotateY(1.5deg) rotateZ(.35deg)}50%{transform:translate3d(4px,-3px,12px) rotateX(2deg) rotateY(3deg) rotateZ(.65deg)}75%{transform:translate3d(0,4px,1px) rotateX(-1deg) rotateY(.5deg) rotateZ(-.2deg)}}
+@media(hover:hover) and (pointer:fine){.landing .bento:hover{box-shadow:0 15px 36px #355c8014}.workspace-canvas .panel:hover{box-shadow:0 8px 24px #335b810a;border-color:#aec5dd}.extension-entry>a:hover{box-shadow:0 9px 22px #38697a13}}
+html[data-presentation-hidden=true] .motion-sculpture,html[data-presentation-hidden=true] .motion-floor,html[data-presentation-hidden=true] .motion-orbit{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.motion-sculpture,.motion-floor,.motion-orbit,.motion-signal{animation:none!important;transform:none!important}.landing .reveal{opacity:1!important;transform:none!important}}
+
+/* Clearly visible, reversible landing reveals; existing product design retained. */
+.landing .reveal[data-motion-enhanced=true]{animation:none!important;transition:opacity .65s ease,transform .8s cubic-bezier(.16,1,.3,1)!important;transform-origin:center;will-change:auto}
+.landing .reveal[data-motion-enhanced=true][data-motion-enter=waiting]{opacity:.42!important;transform:translateY(42px) scale(.985)!important}
+.landing .reveal[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-38px) scale(.985)!important}
+.landing .reveal[data-motion-enhanced=true][data-motion-enter=visible],.landing .reveal[data-motion-enhanced=true]:focus-within{opacity:1!important;transform:none!important}
+@media(max-width:700px){.landing .reveal[data-motion-enhanced=true][data-motion-enter=waiting]{transform:translateY(27px) scale(.99)!important}.landing .reveal[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-25px) scale(.99)!important}}
+@media(prefers-reduced-motion:reduce){.landing .reveal[data-motion-enhanced=true]{opacity:1!important;transform:none!important;transition:none!important}}
+:root[data-lq-motion="reduced"] .landing .reveal[data-motion-enhanced=true]{opacity:1!important;transform:none!important;transition:none!important}

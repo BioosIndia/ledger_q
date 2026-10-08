@@ -1,0 +1,9 @@
+{
+  "archive": "LEDGER_Q_Extra_Features_GitHub.zip",
+  "archive_sha256": "fb1a3550d6b0cc8cc9f3576546e4ea0e420e43717eaee90871b5f295243ddaa6",
+  "source_commit": "87a3664a48b28102f663cddee3650dcfe43e9f29",
+  "verified_source_files": 205,
+  "mismatches": 0,
+  "subsequent_source_commits_included": 5,
+  "scope": "Previous delivered archive source matches the actual delta base; all later committed source changes are included"
+}

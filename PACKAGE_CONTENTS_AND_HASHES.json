@@ -1,0 +1,275 @@
+{
+  "date": "2026-10-08",
+  "files": [
+    {
+      "path": "BASE_SOURCE_HASHES.json",
+      "bytes": 28595,
+      "sha256": "54702e9ac9cb8187a2be1105ebd9c737493d682886468cca44a192961ead5d85"
+    },
+    {
+      "path": "CURRENT_DELIVERY.md",
+      "bytes": 4600,
+      "sha256": "e311cd1ddc7cee9921cd7be2e0a45bfe5704cd854c673a812d879b507aae31cd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3549,
+      "sha256": "604a7c2bc2ea9ad5249a07a67d2bfe8aade905df29c236bb3360634764da1828"
+    },
+    {
+      "path": "SOURCE_BASELINE.json",
+      "bytes": 1897,
+      "sha256": "abd046b934d229b267b3532ca1961be80a0da4ab0ab8c1a60413c56fe40b422f"
+    },
+    {
+      "path": "changed-files/app/layout.tsx",
+      "bytes": 887,
+      "sha256": "afb58ed8d2f38d899f12f3794f8e1a489c0f05915362843cc3a39b6b7c34bf9a"
+    },
+    {
+      "path": "changed-files/app/ledger-reference.css",
+      "bytes": 47711,
+      "sha256": "d6e60400276db0d5906fdb4cd4ce655368d7c69bd4b7d0044661a2d538ef5fdc"
+    },
+    {
+      "path": "changed-files/app/presentation-motion.css",
+      "bytes": 4324,
+      "sha256": "94d4441d5d0fa70d5cd31b1ab0688de8e3308e9ca988160be4fea0354a974a99"
+    },
+    {
+      "path": "changed-files/components/ledger-app.tsx",
+      "bytes": 76845,
+      "sha256": "17dc390ad4ac90a90fefcdff79a7554ef174e583a47e9ef46f17d721ef734b6f"
+    },
+    {
+      "path": "changed-files/components/presentation-motion.tsx",
+      "bytes": 5917,
+      "sha256": "afe9d7bf83859b3ffea4edcc34e906ad949581dcb06360fd6c2c6e87ec579c95"
+    },
+    {
+      "path": "changed-files/docs/CURRENT_DELIVERY.md",
+      "bytes": 4600,
+      "sha256": "e311cd1ddc7cee9921cd7be2e0a45bfe5704cd854c673a812d879b507aae31cd"
+    },
+    {
+      "path": "changed-files/docs/CURRENT_FEATURE_REGISTER.md",
+      "bytes": 781,
+      "sha256": "fa6ada715042b6adb51c927cd66def33453181b3b0eb0097e7d6ab6f6324447a"
+    },
+    {
+      "path": "changed-files/docs/LEDGER_Q_Feature_Traceability.csv",
+      "bytes": 5966,
+      "sha256": "38a035b56f1c952b833d303c8ece5085a2ff3ed850ccc25c2acbbaa4aada33ab"
+    },
+    {
+      "path": "changed-files/docs/cinematic-update/DELIVERY.md",
+      "bytes": 2297,
+      "sha256": "e0b0d0ed490d2f5a9652b489a455666a2869c33519eb47906fd66c94793b095a"
+    },
+    {
+      "path": "changed-files/docs/cinematic-update/REVERTED.md",
+      "bytes": 565,
+      "sha256": "03f1c3936165fba4c356a2b3fa812223ba91b916786e95780bee12ae4ce6d09b"
+    },
+    {
+      "path": "changed-files/docs/cinematic-update/regression-results.json",
+      "bytes": 571,
+      "sha256": "384a2822d3724841d74e704704c0acdaa1ab77d8cbaeeb632b8610e8a49453a9"
+    },
+    {
+      "path": "changed-files/docs/cinematic-update/routes-preserved.json",
+      "bytes": 286,
+      "sha256": "543a787e2da68992c6a88bf3eff50ed53c7e1b59e12e8676d87db1c4010e47ea"
+    },
+    {
+      "path": "changed-files/docs/current-delivery.json",
+      "bytes": 4532,
+      "sha256": "836d76935ffc20e4943c550fcf545bfde3431287719c0e6ea2dbe8522a15a77f"
+    },
+    {
+      "path": "changed-files/docs/verification/extra-feature-checks.json",
+      "bytes": 4093,
+      "sha256": "feec85adfbc4a0ba7255c7b5645e54dfab363785f9999efc6c387fa6ba8675ec"
+    },
+    {
+      "path": "changed-files/docs/verification/integration-results.json",
+      "bytes": 10796,
+      "sha256": "4fb6ef1d8e8eddaff79a7006fe69ac18e2cbb2a37df59ce2b4763dc5f0b76cdc"
+    },
+    {
+      "path": "changed-files/docs/verification/presentation-results.json",
+      "bytes": 1362,
+      "sha256": "a2bd10dbfb1a49c43cc47fcb581bf463aefc438c320f5c540bce2eb0eb3ae492"
+    },
+    {
+      "path": "changed-files/lib/ledger/api.ts",
+      "bytes": 64109,
+      "sha256": "55cac1eec3c894291ad2d127677ae324d8ff190ef4777880a6e8a84b66681bbc"
+    },
+    {
+      "path": "changed-files/lib/ledger/engine.ts",
+      "bytes": 15690,
+      "sha256": "c0cee543649320540a9c35ff5cc6a6a0c2501c9af861ef2b71e250315483df9d"
+    },
+    {
+      "path": "changed-files/lib/ledger/quality-controls.ts",
+      "bytes": 4890,
+      "sha256": "d345d18ebb2888e34d641401ffee1460bfff2ccdd028f1059ccf868148d36294"
+    },
+    {
+      "path": "changed-files/tests/extensions.mjs",
+      "bytes": 9706,
+      "sha256": "fb0142e1beaecfe546b7d418efedfc17dc85b649d25ed33eccbbe541b0ab9a45"
+    },
+    {
+      "path": "changed-files/tests/integration.mjs",
+      "bytes": 57220,
+      "sha256": "26adbff17163d5223f7729ad81a8532042ea4d4386ad24e282b078a372c9b8d7"
+    },
+    {
+      "path": "changed-files/tests/quality-controls.mjs",
+      "bytes": 3454,
+      "sha256": "426d58b71900eb9717aedfcb107e983470a4ef2c99d22803f41f85b5be49e1a3"
+    },
+    {
+      "path": "changes.patch",
+      "bytes": 159795,
+      "sha256": "5d2d660045d264ec724654a8ade4abf7b7bb0f9b50bc1804ee0daa19454e319a"
+    },
+    {
+      "path": "tools/apply_update.py",
+      "bytes": 1790,
+      "sha256": "948d1c164842af8b7a666f31f12d513e9609015f4f9e53701e49d2a36daf0310"
+    },
+    {
+      "path": "tools/restore_optional_configs.py",
+      "bytes": 905,
+      "sha256": "8180103fec8e6db1cb9ace947e7826b1730c39ff123afff7f764a2891bbbf8f0"
+    },
+    {
+      "path": "upload-support/config-name-map.json",
+      "bytes": 459,
+      "sha256": "1b2c35fb02768766e5e22542aee88d2f6c7046e848c56969c35bfdba33e6c428"
+    },
+    {
+      "path": "upload-support/gitignore",
+      "bytes": 627,
+      "sha256": "d31cd488ef63dd7e0d82e140d79cfa5e66bacd489e4743e921e4e248b76b3827"
+    },
+    {
+      "path": "upload-support/npmrc",
+      "bytes": 45,
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+    },
+    {
+      "path": "upload-support/openai-hosting.json",
+      "bytes": 95,
+      "sha256": "98afc0c2f84ba0b35a2d8ee655518ad50fb8c10a8849e9556945953feb28c05c"
+    },
+    {
+      "path": "verification/RESULT_SCOPE.md",
+      "bytes": 645,
+      "sha256": "14d5b1a0a3995de0bedfca5b00c382709722641e80c66e067dad5219aa2f41f4"
+    },
+    {
+      "path": "verification/ledger-quality-current.txt",
+      "bytes": 734,
+      "sha256": "4c456180f11eb9c83173ec72601140832ce4828dba50d5618bd72f418e84f9bc"
+    },
+    {
+      "path": "verification/patch-verification.json",
+      "bytes": 326,
+      "sha256": "5b9e0a7d255aaf7b0da268c518c121c6800f7e28d3564e4f44c8a4f1dd5d980c"
+    },
+    {
+      "path": "verification/previous-archive-baseline-check.json",
+      "bytes": 426,
+      "sha256": "5aa0eb4c8bbec7b57f12bb716c3af9f59a1137dd79615d570a5fede8ec55f5d3"
+    },
+    {
+      "path": "verification/retained-dated-evidence/hosted-v3-results.json",
+      "bytes": 3328,
+      "sha256": "e6b9cc769e577b50a4834dbc61630e2cd683a9c15fea1d6d06606b3c2febc21e"
+    },
+    {
+      "path": "verification/retained-dated-evidence/integration-results.json",
+      "bytes": 10796,
+      "sha256": "4fb6ef1d8e8eddaff79a7006fe69ac18e2cbb2a37df59ce2b4763dc5f0b76cdc"
+    },
+    {
+      "path": "verification/retained-dated-evidence/live-outcome-before-fix-2026-10-07.json",
+      "bytes": 1762,
+      "sha256": "f5373a780952ea74207c550dab5b350d2dc8938eedc9397744c601cb564a4a8a"
+    },
+    {
+      "path": "verification/retained-dated-evidence/presentation-results.json",
+      "bytes": 1362,
+      "sha256": "a2bd10dbfb1a49c43cc47fcb581bf463aefc438c320f5c540bce2eb0eb3ae492"
+    },
+    {
+      "path": "verification/zip-only-merge-check.json",
+      "bytes": 192,
+      "sha256": "2cad26352e10edc757fe39da00d8f37455c833f57e0b0b9039af1a4f366e02f9"
+    },
+    {
+      "path": "walkthrough/FULL_BILINGUAL_WALKTHROUGH.md",
+      "bytes": 20567,
+      "sha256": "e2a8085182a4e2dbdf2d4c866235c0ba7545a669a7c2d11cd5187bd3b468326c"
+    },
+    {
+      "path": "walkthrough/LEDGER_Q_Latest_Bilingual_Walkthrough.pdf",
+      "bytes": 3703614,
+      "sha256": "b0afb311ba407ea04b74268ab802120deb8764ace492ff5a62c33d4eacd691e9"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-1.png",
+      "bytes": 362081,
+      "sha256": "de96e34f415b58c65ee300045e94f64f0f523dc338c884448b92c058267b015c"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-2.png",
+      "bytes": 366660,
+      "sha256": "42f95275d4d17ddde3eba64a819b4ff155c0b14a5d49f4ab38c74a2c7609c381"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-3.png",
+      "bytes": 350859,
+      "sha256": "52ba846d7554c3653ee0c90d3e1de6a269094f8cec0e5f5b68d73a923e48652a"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-4.png",
+      "bytes": 355174,
+      "sha256": "51f52a877fdaccb555d6e0ed61dfd3720e11f817cd222e2e43684ee4a1626b3b"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-5.png",
+      "bytes": 380513,
+      "sha256": "1ae9633af8e8a6ad79351a04ec739aea451c6f054d9b22f365ed8c3d755d4b64"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-6.png",
+      "bytes": 366301,
+      "sha256": "94378b7cfab4cd09d9c24b08e5b60d46b4ad78f1455770a72be67269a9e41dd3"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-7.png",
+      "bytes": 383777,
+      "sha256": "f34f202857d07153f8721e7455a770f66887354da426a754ffbd62f231d8a1b8"
+    },
+    {
+      "path": "walkthrough/images/LEDGER_Q-step-8.png",
+      "bytes": 373114,
+      "sha256": "53b60e1d26b838c3aac1bbcb076d135c1cff76d081cb4c42689f5fba53da2662"
+    },
+    {
+      "path": "walkthrough/provenance.json",
+      "bytes": 281,
+      "sha256": "b9e2d83f645a50f13c35a91839fda5adf86045e8ce80b474754658c5914d47ac"
+    },
+    {
+      "path": "walkthrough/script-data.json",
+      "bytes": 11019,
+      "sha256": "72fc7d6fff8d886ef398f6c3daa3d28686dc4011c5714ccc05b83b220283ac9f"
+    }
+  ]
+}

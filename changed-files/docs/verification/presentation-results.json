@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-07T20:47:38.107Z",
+  "scope": "Server-rendered presentation checks against synthetic persisted record shapes; not browser visual or interaction QA.",
+  "results": [
+    {
+      "name": "Quality workbench preserves conflicting original/transcribed values and HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Read-only workbench cannot offer an enabled signing action",
+      "result": "PASS"
+    },
+    {
+      "name": "Map includes saved dependencies and bounded source links with exact revisions",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner-only role cannot enable reviewer signing in review dock",
+      "result": "PASS"
+    },
+    {
+      "name": "Audit workspace keeps packet state and human approval requirement visible",
+      "result": "PASS"
+    },
+    {
+      "name": "Empty quality workspace explains missing source rather than inventing a case",
+      "result": "PASS"
+    },
+    {
+      "name": "Fresh outcome view contains zero saved counts and directs to originals, never preloads proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Saved outcome view retains uncertainty and avoids treating historical decisions as approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Motion model is decorative and does not imply saved facts or approval",
+      "result": "PASS"
+    }
+  ],
+  "passed": 9
+}

@@ -1,0 +1,28 @@
+{
+  "baseline_commit": "173b7b941533e22187298ec45bb14c68430c8709",
+  "suites": [
+    {
+      "suite": "outcome",
+      "exit_code": 0,
+      "checks": 15
+    },
+    {
+      "suite": "extensions",
+      "exit_code": 0,
+      "checks": 37
+    },
+    {
+      "suite": "integration",
+      "exit_code": 0,
+      "checks": 86
+    },
+    {
+      "suite": "presentation",
+      "exit_code": 0,
+      "checks": 9
+    }
+  ],
+  "passed": 147,
+  "failed": 0,
+  "scope": "Local engineering fixtures and compiled runtime checks. Not production validation or live provider evidence."
+}

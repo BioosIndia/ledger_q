@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-08T12:06:40.255012+00:00",
+  "base": "87a3664a48b28102f663cddee3650dcfe43e9f29",
+  "head": "0e2d96d92006026018e36c6747cc380aced7c457",
+  "git_apply_check": true,
+  "changed_files_byte_equal_to_head": true,
+  "deleted_files_absent": true,
+  "omitted_generated_cache": [],
+  "original_repo_modified": false
+}

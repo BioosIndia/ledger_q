@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-08T09:25:12.793269+00:00",
+  "enterpriseQualified": false,
+  "requirements": [
+    {
+      "id": "L01 Real-data scope",
+      "implemented": "Owner can authorize source use in a separate empty workspace; synthetic public proof remains unchanged.",
+      "remaining": "Professional qualification and commercial data-handling approval not inferred."
+    },
+    {
+      "id": "L02 Critical transcription",
+      "implemented": "Different QA reviewer, exact-version confirmation, page/location and original-byte integrity before binary-transcription approval.",
+      "remaining": "Representative transcription accuracy and complete automated OCR not established."
+    },
+    {
+      "id": "L03 OOS investigation",
+      "implemented": "Phase 1 evidence, phase 2 decision/rationale and evidence when required; retest status/rationale and original reference.",
+      "remaining": "Qualified investigation and disposition remain human decisions."
+    },
+    {
+      "id": "L04 OOT",
+      "implemented": "Existing comparable-context controls retained and extension adverse tests rerun.",
+      "remaining": "Customer-approved statistical rules and representative comparable data are still required."
+    },
+    {
+      "id": "L05 Cause certainty",
+      "implemented": "CONFIRMED / LIKELY / UNRESOLVED distinction; unresolved/likely rationale and residual controls, named disposition.",
+      "remaining": "System does not determine root cause or batch disposition."
+    },
+    {
+      "id": "L06 CAPA effectiveness",
+      "implemented": "Independent signed plan before implementation, exact criterion/window, actual evidence and observation-date closure gates.",
+      "remaining": "Historical formats require revision; real effectiveness observation cannot be manufactured."
+    },
+    {
+      "id": "L07 PQR/APQR",
+      "implemented": "Existing typed coverage and quality-context extension tests retained.",
+      "remaining": "Comprehensive customer product/period source completeness remains partial."
+    },
+    {
+      "id": "L08 Notifications",
+      "implemented": "Saved bounded in-app delivery, failed target/retry state, channel and acknowledgement; no false email claim.",
+      "remaining": "External email/webhook delivery requires a configured provider and delivery evidence."
+    },
+    {
+      "id": "L09 AI qualification",
+      "implemented": "Existing model, consent, exact dependency and evaluation gates preserved.",
+      "remaining": "Representative independent expected answers, live quality and revalidation qualification remain external."
+    },
+    {
+      "id": "L10 Retention/offboarding",
+      "implemented": "Existing owner request, audit-preserving history, bounded backup/copy-restore controls retained.",
+      "remaining": "Legal hold, verified deletion, production archive/offboarding and disaster recovery qualification are not complete."
+    }
+  ],
+  "shared": [
+    {
+      "item": "Authoritative current status",
+      "status": "This report is authoritative for changes in this delivery. Earlier status/proof files describe their dated scope; they are not upgraded by a build."
+    },
+    {
+      "item": "Independent evaluation",
+      "status": "Synthetic controls and public-document intake are separate from held-out reviewer-labelled scientific/regulatory evaluation."
+    },
+    {
+      "item": "Live model outcomes",
+      "status": "Configured credentials and local protocol mocks do not establish fresh successful hosted inference or model quality."
+    },
+    {
+      "item": "Professional outcomes",
+      "status": "No real-user pilot results, time savings or accuracy percentages were invented."
+    },
+    {
+      "item": "Identity/security",
+      "status": "Existing roles, signed decisions, tenant scope and auth retained. Production identity recovery, external OAuth and complete security qualification remain separate."
+    },
+    {
+      "item": "Operations",
+      "status": "Build/local persistence/export checks pass only within their stated scope; target load, alert delivery, restore/rollback/incident drills remain unqualified."
+    },
+    {
+      "item": "Cross-product handoff",
+      "status": "No automatic permission bypass or transferred approval. Existing exact-revision/manual intake controls retained; receiving-system reconciliation remains scoped."
+    },
+    {
+      "item": "Human-readable outcomes",
+      "status": "Visible gaps, HOLD, source references and next review owner retained. No automatic regulatory release."
+    }
+  ]
+}

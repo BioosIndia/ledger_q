@@ -1,43 +1,33 @@
-# PRAMANEX LEDGER-Q
+# LEDGER_Q incremental GitHub update - Last_Delivered_to_v21
 
-A working synthetic quality-record and AI-assurance application by Rahul Dewangan.
+Sirf aapko last delivered ZIP ke source se aage ka update hai. Purana full repository dobara nahi diya gaya. Last delivered archive: LEDGER_Q_Extra_Features_GitHub.zip. Exact base: 87a3664a48b28102f663cddee3650dcfe43e9f29. Head exported: 0e2d96d92006026018e36c6747cc380aced7c457. Us archive ke baad ke 5 source commits ka combined change included hai. Latest bilingual PDF and editable script are in walkthrough/.
 
-## Run and verify
+## Safe local merge (recommended)
 
-Requires Node 22.13+ and pnpm 11.25 (lockfile included).
+1. Extract this ZIP to a separate folder; keep your existing repository untouched.
+2. Confirm your repository is on the exact base SHA and has no unsaved changes. Do not reset or overwrite a newer version.
+3. Run: python tools/apply_update.py --repo /path/to/your/existing/repository
+4. Review git diff, run the documented app checks and inspect saved outcomes. Commit/push yourself only after reviewing the result; this package does not commit or push.
 
-```sh
-npm run install:ci
-node tests/integration.mjs
-node node_modules/typescript/bin/tsc --noEmit
-npm run build
-```
+If your old source is an extracted ZIP, or GitHub uses a different commit ID for the same code, use: python tools/apply_update.py --repo /path/to/source --verify-content
+This verifies every exported base source hash before applying; it was tested without Git metadata and without the hidden .openai folder. It refuses mismatched/missing source or an already-existing new path. Git is required to apply the patch, but GitHub authentication is not. Unchanged hidden settings remain optional platform configuration copies.
 
-The Sites build command wraps the framework build and produces a Cloudflare-compatible Worker with D1 and R2. Schema-only migration is in `drizzle/`. Do not place user data or seeds in migrations. Synthetic workspaces are created through authorized runtime operations.
+## GitHub browser upload
 
-## Environment
+Extract the ZIP first. Upload the CONTENTS of changed-files/ into the EXISTING repository root; do not upload the ZIP as application source, do not place the outer delivery folder inside app/, and do not create changed-files/app under your repo. The resulting root app/ holds application routes. An existing app/app route is legitimate in this source and is not renamed.
 
-`DB` and `BUCKET` are runtime bindings. Set `LQ_ENCRYPTION_KEY` to a randomly generated server secret. Provider keys are optional encrypted workspace settings; `GROQ_API_KEY` and `GEMINI_API_KEY` are optional server-wide keys only for an explicitly authorized deployment. Never commit secrets. A provider call requires configured model IDs and explicit workspace document consent.
+The changed source batch has 22 files. GitHub's documented browser limit is 100 files per upload and 25 MiB per file. Branch rules and secret scanning can independently reject an upload. These packages have no hidden-dot paths and no live credentials. An unknown GitHub "Something went wrong" error cannot be conclusively diagnosed without its actual message; use the local patch/GitHub Desktop path if web upload still fails.
 
-## Product journey
+## Visible configuration fix
 
-1. Inspect `/app?demo=1` for an isolated read-only saved Drug Q case.
-2. Create an app account to get a fresh empty workspace. Login opens a zero-record private dashboard. Compact Workspaces and Working proof controls open saved work only when selected. Existing evidence is preserved; no proof is added implicitly.
-3. Add permitted sources, or explicitly choose and confirm the Drug Q working proof into an empty workspace. The public original stays separate. Read originals, inspect requirements, conflicting assays, investigation, CAPA and training.
-4. In Controls, explicitly assign synthetic reviewer permissions and enroll a real authenticator.
-5. Record an exact-revision human decision; missing evidence blocks approval.
-6. Revise source evidence to reopen dependent quality and AI work.
-7. In Controls, connect and test Gemini using the secure configured key and selected-evidence permission. Two distinct discovered models support the saved bounded team. Alternatively configure Groq.
-8. Inspect run/evaluation history, unapproved/controlled packets and backup-copy reconstruction.
+Platform metadata .openai/hosting.json is stored visibly as upload-support/openai-hosting.json. Other tracked hidden settings are mirrored visibly too; config-name-map.json records original names and hashes. They are unchanged support copies, not part of the source delta. Existing correct settings need no upload.
 
-The app-owned account does not bypass the owner-private Site audience boundary. Real Google login/email recovery is not configured or simulated.
+If you really need to restore an absent setting locally, first preview: python tools/restore_optional_configs.py --repo /path/to/repo
+Then after checking: python tools/restore_optional_configs.py --repo /path/to/repo --write
+The script refuses to overwrite a differing existing configuration. Uploading a visible config file alone does not make it active under its original hidden path.
 
-## Source-of-truth documents
+## What is retained in your previous full package
 
-`docs/LEDGER_Q_Master_Rulebook.md`, mapping/flowcharts and original traceability retain the approved specification. `docs/LEDGER_Q_Implementation_Traceability.csv` and `docs/LEDGER_Q_Delivery_Checklist.md` record actual behavior and remaining evidence gaps. See `docs/ARCHITECTURE_DECISIONS.md` for explicit infrastructure substitutions.
+Unchanged original code, lockfile, Docker/container/build files, media and history remain in your base package/repository. This delta deliberately does not repeat them. Generated type-check cache omissions: none. No design, diagram, test count or configured API key establishes enterprise qualification.
 
-## Honest scope
-
-Synthetic working product, bounded multi-agent candidate support and optional live provider routing. Integration tests use actual SQLite SQL with a D1-compatible adapter and in-memory object storage; local provider responses are mocked. Actual hosted Gemini connectivity and saved team execution are separately verified with the configured key against the synthetic Drug Q case; see docs/verification/hosted-v3-results.json. No enterprise qualification, professional accuracy, unrestricted swarm, regulatory release or measured percentage benefit is claimed.
-
-See docs/Fresh_Dashboard_and_Personalization_v5.md for compact proof/workspace controls, the model-cover fix and functional browser-local preferences.
+GitHub reference checked 8 October 2026: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
