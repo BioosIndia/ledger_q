@@ -1,53 +1,43 @@
-# LEDGER-Q Extra Features — complete GitHub source package
+# PRAMANEX LEDGER-Q
 
-Site: https://ledger-q.r4dewangan.chatgpt.site
-Source revision: `87a3664a48b28102f663cddee3650dcfe43e9f29`
+A working synthetic quality-record and AI-assurance application by Rahul Dewangan.
 
-Yeh sirf text package nahi hai. `source/` mein current complete application code, original assets, diagrams, bilingual demo media, Docker/configuration files, schema/migrations, workflows, tests aur documentation hain. `Git_History.bundle` mein available source history hai. `changes/Extra_Features_From_v15.patch` batata hai pichhle v15 se kya badla.
+## Run and verify
 
-## Kya add/refine hua
-
-20 existing canonical areas retained; 11 shared capabilities reused; 24 partial areas refined within bounded working scope; 5 additions: Batch Record Validator, authorized Regulatory Update Intake, Batch Quality Review, OOT Detection, Batch Readiness. Supplier qualification, predictive quality risk, environmental/microbial monitoring, visual packaging/label inspection and incoming-material qualification are deferred.
-
-- Naya sign-in workspace zero se shuru hota hai.
-- Working proof alag hai; additional synthetic proof explicitly select/load hota hai.
-- Batch / regulatory / quality checks source se compute hokar save hote hain.
-- Missing values, wrong context/units, unresolved conflicts aur changed evidence HOLD/STALE rehte hain.
-- Existing saved agent orchestration candidate support deta hai; human reviewer hi decision deta hai.
-- Reports readable HTML (Print / Save as PDF) + exact structured JSON evidence ke saath milte hain.
-- Signed AI-use rollback nayi suspended revision banata hai; old history rehti hai.
-
-## Folder guide
-
-- `source/app`, `source/components`: landing, sign-in, dashboards, review, navigation and reports.
-- `source/lib/ledger`: saved workflow, quality checks, provider routing, signing, permissions and storage.
-- `source/public`, `source/media-src`: actual supplied/generated assets, diagrams, bilingual media and media-generation source.
-- `source/Dockerfile`, `source/docs/CONTAINER_NOTES.md`: container setup and its limitations.
-- `source/drizzle`, `source/db`: database schema and migrations.
-- `source/tests`: reproducible integration, adverse, outcome and presentation checks.
-- `source/docs/LEDGER_Q_45_Feature_Coverage.csv`: all 45 names, reuse/refine/add/defer decision, screen, connected action and boundary.
-- `source/docs/LEDGER_Q_Extra_Features_Review.md`: detailed delivery review and nine-part allocation.
-- `verification/`: current executed check receipts and release identity.
-
-## Run / verify
-
-Use Node 22.13+ and the pinned pnpm version in `source/package.json`. Read the existing source README and container notes for the Worker/D1/R2 runtime requirements. Provider keys belong in secure runtime settings; no API key, session, private workspace or runtime database is included here.
+Requires Node 22.13+ and pnpm 11.25 (lockfile included).
 
 ```sh
-cd source
-pnpm install --frozen-lockfile
-node node_modules/typescript/bin/tsc --noEmit
+npm run install:ci
 node tests/integration.mjs
-node tests/extensions.mjs
-node tests/presentation.mjs
-node --experimental-strip-types --test tests/outcome.test.mjs
-pnpm build
+node node_modules/typescript/bin/tsc --noEmit
+npm run build
 ```
 
-The SQLite/R2-memory integration fixture is isolated test data. It does not substitute for the deployed database. Production uses the existing Sites Worker/D1/R2 bindings. Docker alone does not provision those managed services.
+The Sites build command wraps the framework build and produces a Cloudflare-compatible Worker with D1 and R2. Schema-only migration is in `drizzle/`. Do not place user data or seeds in migrations. Synthetic workspaces are created through authorized runtime operations.
 
-## Honest readiness boundary
+## Environment
 
-Executed checks: 86 API/integration + 37 unit/adverse + 9 server-render checks + 15 outcome tests. Typecheck and production build passed. Provider contract tests use mocks unless explicitly identified as live. Browser/device automation and new live provider qualification were not performed.
+`DB` and `BUCKET` are runtime bindings. Set `LQ_ENCRYPTION_KEY` to a randomly generated server secret. Provider keys are optional encrypted workspace settings; `GROQ_API_KEY` and `GEMINI_API_KEY` are optional server-wide keys only for an explicitly authorized deployment. Never commit secrets. A provider call requires configured model IDs and explicit workspace document consent.
 
-This is a bounded working portfolio/MVP. Synthetic proof cannot establish real-user time savings, representative quality/fairness, legal compliance, qualified human judgement or enterprise validation. No automatic batch/regulatory release is included.
+## Product journey
+
+1. Inspect `/app?demo=1` for an isolated read-only saved Drug Q case.
+2. Create an app account to get a fresh empty workspace. Login opens a zero-record private dashboard. Compact Workspaces and Working proof controls open saved work only when selected. Existing evidence is preserved; no proof is added implicitly.
+3. Add permitted sources, or explicitly choose and confirm the Drug Q working proof into an empty workspace. The public original stays separate. Read originals, inspect requirements, conflicting assays, investigation, CAPA and training.
+4. In Controls, explicitly assign synthetic reviewer permissions and enroll a real authenticator.
+5. Record an exact-revision human decision; missing evidence blocks approval.
+6. Revise source evidence to reopen dependent quality and AI work.
+7. In Controls, connect and test Gemini using the secure configured key and selected-evidence permission. Two distinct discovered models support the saved bounded team. Alternatively configure Groq.
+8. Inspect run/evaluation history, unapproved/controlled packets and backup-copy reconstruction.
+
+The app-owned account does not bypass the owner-private Site audience boundary. Real Google login/email recovery is not configured or simulated.
+
+## Source-of-truth documents
+
+`docs/LEDGER_Q_Master_Rulebook.md`, mapping/flowcharts and original traceability retain the approved specification. `docs/LEDGER_Q_Implementation_Traceability.csv` and `docs/LEDGER_Q_Delivery_Checklist.md` record actual behavior and remaining evidence gaps. See `docs/ARCHITECTURE_DECISIONS.md` for explicit infrastructure substitutions.
+
+## Honest scope
+
+Synthetic working product, bounded multi-agent candidate support and optional live provider routing. Integration tests use actual SQLite SQL with a D1-compatible adapter and in-memory object storage; local provider responses are mocked. Actual hosted Gemini connectivity and saved team execution are separately verified with the configured key against the synthetic Drug Q case; see docs/verification/hosted-v3-results.json. No enterprise qualification, professional accuracy, unrestricted swarm, regulatory release or measured percentage benefit is claimed.
+
+See docs/Fresh_Dashboard_and_Personalization_v5.md for compact proof/workspace controls, the model-cover fix and functional browser-local preferences.
