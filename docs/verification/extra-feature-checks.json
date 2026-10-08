@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-07T15:05:44.969Z",
+  "scope": "Executed synthetic unit/adverse checks. No independent professional or production validation.",
+  "passed": 37,
+  "results": [
+    {
+      "name": "New workspace has no proof, assessments or provider consent",
+      "result": "PASS"
+    },
+    {
+      "name": "Critical missing batch record cannot pass",
+      "result": "PASS"
+    },
+    {
+      "name": "Complete records become review-required, never released",
+      "result": "PASS"
+    },
+    {
+      "name": "Empty manifest cannot imply complete batch",
+      "result": "PASS"
+    },
+    {
+      "name": "Duplicate steps cannot inflate completeness",
+      "result": "PASS"
+    },
+    {
+      "name": "Wrong product/site stays HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Out-of-spec result remains original and held",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing assay cannot be replaced by a passing retest",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing method/unit blocks quality progression",
+      "result": "PASS"
+    },
+    {
+      "name": "Batch readiness requires four explicit review categories",
+      "result": "PASS"
+    },
+    {
+      "name": "Present but unsigned prerequisites cannot establish readiness",
+      "result": "PASS"
+    },
+    {
+      "name": "OOT band alert is separate from specification failure",
+      "result": "PASS"
+    },
+    {
+      "name": "OOT inside documented band still requires human review",
+      "result": "PASS"
+    },
+    {
+      "name": "Insufficient history does not imply no OOT",
+      "result": "PASS"
+    },
+    {
+      "name": "Incomparable units block OOT calculation",
+      "result": "PASS"
+    },
+    {
+      "name": "Future observations cannot become prior history",
+      "result": "PASS"
+    },
+    {
+      "name": "Duplicate prior identities cannot inflate trend denominator",
+      "result": "PASS"
+    },
+    {
+      "name": "Undocumented trend rule remains a gap",
+      "result": "PASS"
+    },
+    {
+      "name": "Calendar-overflow dates fail validation",
+      "result": "PASS"
+    },
+    {
+      "name": "Official allowlist rejects suffix spoofing and URL credentials",
+      "result": "PASS"
+    },
+    {
+      "name": "Regulatory discovery without verification stays HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Same old/current version cannot become change evidence",
+      "result": "PASS"
+    },
+    {
+      "name": "Foreign affected record does not create a local mapping",
+      "result": "PASS"
+    },
+    {
+      "name": "Changed source invalidates assessment and blocks old approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Failed computed checks cannot receive approval",
+      "result": "PASS"
+    },
+    {
+      "name": "CAPA rate comparison preserves exposure and does not establish causality",
+      "result": "PASS"
+    },
+    {
+      "name": "Zero exposure cannot produce effectiveness success",
+      "result": "PASS"
+    },
+    {
+      "name": "Overlapping CAPA windows block comparison",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing APQR denominator is an explicit gap",
+      "result": "PASS"
+    },
+    {
+      "name": "Deterministic fixtures cannot be counted as actual model quality",
+      "result": "PASS"
+    },
+    {
+      "name": "Unscored risk is UNKNOWN rather than invented high confidence",
+      "result": "PASS"
+    },
+    {
+      "name": "SOP keyword match without exact excerpt cannot establish coverage",
+      "result": "PASS"
+    },
+    {
+      "name": "HTML exports escape source injection and preserve HOLD",
+      "result": "PASS"
+    },
+    {
+      "name": "Export follows transitive evidence, decisions and immutable history",
+      "result": "PASS"
+    },
+    {
+      "name": "Export cannot omit missing evidence",
+      "result": "PASS"
+    },
+    {
+      "name": "Additional proof is explicit and preserves original held investigation",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid or duplicate selected input cannot silently count twice",
+      "result": "PASS"
+    }
+  ]
+}

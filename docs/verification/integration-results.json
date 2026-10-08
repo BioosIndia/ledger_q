@@ -1,7 +1,7 @@
 {
-  "at": "2026-10-07T10:20:30.591Z",
+  "at": "2026-10-07T15:05:44.207Z",
   "scope": "D1-compatible SQLite/R2-memory API integration + synthetic controls. Not deployed/browser/professional validation.",
-  "passed": 65,
+  "passed": 86,
   "results": [
     {
       "name": "Ten-step proof reads saved public evidence and leaves private work untouched",
@@ -257,6 +257,90 @@
     },
     {
       "name": "Empty live facts cannot be promoted to a completed supported outcome",
+      "result": "PASS"
+    },
+    {
+      "name": "Extra proof has a separate saved public workspace and leaves the original unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "Additional public originals are served only from the separate proof workspace",
+      "result": "PASS"
+    },
+    {
+      "name": "Public extra proof cannot execute assessments",
+      "result": "PASS"
+    },
+    {
+      "name": "Private extra proof requires explicit synthetic confirmation",
+      "result": "PASS"
+    },
+    {
+      "name": "Confirmed additional proof preserves original binary/source history and saves assessments",
+      "result": "PASS"
+    },
+    {
+      "name": "Real API assessment is saved and read back with exact source versions",
+      "result": "PASS"
+    },
+    {
+      "name": "Idempotent assessment replay returns the original record ID and does not add duplicate records",
+      "result": "PASS"
+    },
+    {
+      "name": "Missing original persists as a held assessment rather than apparent success",
+      "result": "PASS"
+    },
+    {
+      "name": "Computed assessment findings cannot be directly edited into passing state",
+      "result": "PASS"
+    },
+    {
+      "name": "Assessment follow-up creates linked held work rather than a guessed cause",
+      "result": "PASS"
+    },
+    {
+      "name": "Assessment export includes readable findings and the transitive source evidence",
+      "result": "PASS"
+    },
+    {
+      "name": "HOLD assessment cannot be exported as current approved work",
+      "result": "PASS"
+    },
+    {
+      "name": "Unapproved regulatory intake cannot stale local work",
+      "result": "PASS"
+    },
+    {
+      "name": "New typed checks feed the saved existing specialist orchestration without granting approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Rollback rejects absent historical AI use without changing release state",
+      "result": "PASS"
+    },
+    {
+      "name": "Controlled rollback preserves old history and creates a freshly suspended version",
+      "result": "PASS"
+    },
+    {
+      "name": "Downloaded JSON template can be uploaded as an original and assessed without transcription workarounds",
+      "result": "PASS"
+    },
+    {
+      "name": "Verified regulatory intake requires exact local originals then signed human review before affected work reopens",
+      "result": "PASS"
+    },
+    {
+      "name": "Workspace context change invalidates saved assessments without deleting proof",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner data-handling request preserves audit evidence instead of deleting records",
+      "result": "PASS"
+    },
+    {
+      "name": "Foreign evidence cannot be selected into an assessment",
       "result": "PASS"
     },
     {

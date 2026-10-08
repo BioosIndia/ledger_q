@@ -2,7 +2,7 @@
 Rahul Dewangan / PRAMANEX · 6 October 2026
 
 ## What this document does
-Yeh rulebook agle build ka working agreement hai. Abhi LEDGER-Q application build, deploy ya validate nahi hui hai. PDF defines what to build; videos define selected layout/motion references. Dono ko ek connected product mein use karna hai. “100% perfect” promise nahi: tested critical journey mein no known P0/P1 defect, clear failures aur reproducible evidence target hai.
+Yeh rulebook agle build ka working agreement hai. Yeh original planning rulebook hai; application ab bounded synthetic working scope mein built hai. Current implementation, additions aur qualification limits `LEDGER_Q_Extra_Features_Review.md` aur coverage CSV mein diye hain. PDF defines what to build; videos define selected layout/motion references. Dono ko ek connected product mein use karna hai. “100% perfect” promise nahi: tested critical journey mein no known P0/P1 defect, clear failures aur reproducible evidence target hai.
 
 PDF authority: `PRAMANEX_LEDGER_Q_Enterprise_SaaS_Master_Blueprint(3)(3).pdf`, all 16 pages. Canonical scope: F01–F20 + L01–L12. LQ-P01–P05 and LQ-R01–R04 are proposed child controls, not extra top-level modules or already proven differentiators. Separate GxP Training AI OS remains out of scope; basic F10 is included.
 
