@@ -1,0 +1,20 @@
+✔ Missing credentials do not touch storage or accept a check (8.566765ms)
+✔ Unknown service token is rejected (3.459098ms)
+✔ Only explicit bounded mode is accepted, not workspace or approval commands (3.074401ms)
+✔ Streaming request limit is enforced before full allocation (1.561521ms)
+✔ Synthetic source and actual checks are persisted and read back with matching hash (3.726352ms)
+✔ Repeated POST replays the same receipt without new checks or provider calls (4.402418ms)
+✔ Completed receipt cannot be silently changed or deleted (2.895738ms)
+✔ Failed control remains HOLD with its failed observation, not a healthy result (2.017994ms)
+✔ Missing provider produces held live check, never a fabricated inference (2.298097ms)
+✔ Two distinct model responses are checked against exact answers and no release (2.209176ms)
+✔ Wrong value fails before a reviewer call and retains the first failure (0.802543ms)
+✔ Provider authorization failure is not retried or hidden as model success (0.279622ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.456232

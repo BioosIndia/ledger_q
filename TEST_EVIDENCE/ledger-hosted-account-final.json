@@ -1,0 +1,64 @@
+{
+  "site": "ledger",
+  "scope": "Real hosted HTTP journey, own synthetic identity; not browser/OAuth UI or professional qualification",
+  "checks": [
+    {
+      "check": "Own email signup",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "Saved own session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Fresh own workspace is separate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Fresh evidence starts at zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Original public proof remains read-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Public replay reads only proof revision",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Unowned history blocked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Own logout completes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Logged-out own session removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Own password login works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Login persisted session works",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "harnessCorrection": "The first probe used /workspace; the corrected /state full hosted rerun returned 11 passes. The first harness failure is retained."
+}

@@ -1,0 +1,18 @@
+PASS service authentication blocks execution
+PASS service authentication blocks service readback
+PASS public status begins with no invented receipt
+PASS unknown command cannot enter monitor
+PASS real engine controls and original readback persist
+PASS duplicate execution reuses sealed receipt
+PASS saved status verifies hash and current build
+PASS sealed evidence cannot be overwritten or deleted
+PASS two separate provider fixtures check frozen answers
+PASS duplicate live canary never doubles provider cost
+PASS protocol stays unapproved and requires real acceptance
+PASS quality report route renders without secrets
+PASS public proof history is limited to its own saved current revision
+PASS public history rejects foreign workspace selection
+PASS public history rejects unavailable revisions
+PASS public history cannot be mutated
+PASS public replay does not expose private history
+{"product":"LEDGER-Q","passed":17,"scope":"Compiled local Worker, synthetic data and provider fixtures; not live inference or qualified acceptance"}

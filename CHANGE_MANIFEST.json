@@ -1,0 +1,145 @@
+{
+  "project": "LEDGER_Q",
+  "date": "2026-10-12",
+  "baseline_deployed_version": 21,
+  "updated_deployed_version": 24,
+  "baseline_commit": "0e2d96d92006026018e36c6747cc380aced7c457",
+  "updated_commit": "049b9b0baf26f75111becb9d15c4a7466851337d",
+  "scope": "Only source changes from the preceding deployed source to the 12 October quality update. No unchanged original repository is repeated.",
+  "files": [
+    {
+      "status": "A",
+      "path": "app/api/quality/background/route.ts",
+      "before_sha256": null,
+      "after_sha256": "7978d7a1f3600bd6c8fcf89ce8ea600eafb7cb936cb3fd8bfd7ce35b10d98267",
+      "bytes": 573
+    },
+    {
+      "status": "A",
+      "path": "app/api/quality/protocol/route.ts",
+      "before_sha256": null,
+      "after_sha256": "b34854248b3a246ef5e7e168521ff69d5dfc3aef2a347570ef38873dffddd415",
+      "bytes": 4049
+    },
+    {
+      "status": "A",
+      "path": "app/api/quality/status/route.ts",
+      "before_sha256": null,
+      "after_sha256": "b2ee78a2aba55abe9f9c7f3854c1b786fad23344c8d2678ab63db470c0e9ffb4",
+      "bytes": 310
+    },
+    {
+      "status": "A",
+      "path": "app/quality-monitor-panel.tsx",
+      "before_sha256": null,
+      "after_sha256": "17eaa57489bb9dfde77d09bc77a445c8fcddd0620d3130c7287e95dd5b569e4c",
+      "bytes": 4937
+    },
+    {
+      "status": "A",
+      "path": "app/quality/page.tsx",
+      "before_sha256": null,
+      "after_sha256": "a61bf051ae272c2c5dfcd387192e62107c7e68e726dacf007214ffd8ed26983d",
+      "bytes": 506
+    },
+    {
+      "status": "M",
+      "path": "components/ledger-app.tsx",
+      "before_sha256": "17dc390ad4ac90a90fefcdff79a7554ef174e583a47e9ef46f17d721ef734b6f",
+      "after_sha256": "042c5f6555149035099cac81df302f2635b30089a44bfc66e42d5bcdd0602a2d",
+      "bytes": 77105
+    },
+    {
+      "status": "A",
+      "path": "docs/QUALITY_AUTOMATION.md",
+      "before_sha256": null,
+      "after_sha256": "c2752063754ee596ce1f006618c8ef79af95692a964e9391d6e5883d53f1112c",
+      "bytes": 1680
+    },
+    {
+      "status": "M",
+      "path": "docs/verification/extra-feature-checks.json",
+      "before_sha256": "feec85adfbc4a0ba7255c7b5645e54dfab363785f9999efc6c387fa6ba8675ec",
+      "after_sha256": "72c3d598407d578ca25ffa0d63f6bef0d3bf6256b622bbffaa8e14fba4c07e22",
+      "bytes": 4093
+    },
+    {
+      "status": "M",
+      "path": "docs/verification/integration-results.json",
+      "before_sha256": "4fb6ef1d8e8eddaff79a7006fe69ac18e2cbb2a37df59ce2b4763dc5f0b76cdc",
+      "after_sha256": "7ddefd8cd2da825909bf24ce50eb0e86808457efcf42c2aba527f7f3df1480d7",
+      "bytes": 10796
+    },
+    {
+      "status": "M",
+      "path": "docs/verification/presentation-results.json",
+      "before_sha256": "a2bd10dbfb1a49c43cc47fcb581bf463aefc438c320f5c540bce2eb0eb3ae492",
+      "after_sha256": "0341432150cbf2bba1be27920b142e40c50fc9a1bc2f6a30a2af7c455ef7d5e5",
+      "bytes": 1362
+    },
+    {
+      "status": "M",
+      "path": "lib/ledger/api.ts",
+      "before_sha256": "55cac1eec3c894291ad2d127677ae324d8ff190ef4777880a6e8a84b66681bbc",
+      "after_sha256": "dad0b16d9bdbf495c3af747630657de72e25362b505e3539b0b4f079fc444148",
+      "bytes": 65363
+    },
+    {
+      "status": "A",
+      "path": "lib/quality-adapter.ts",
+      "before_sha256": null,
+      "after_sha256": "6ce2d1a1b9db70530b9dc053d84d6d8c07ead7e2cf5a1fe28f1cc48d83f61a05",
+      "bytes": 2685
+    },
+    {
+      "status": "A",
+      "path": "lib/quality-monitor.ts",
+      "before_sha256": null,
+      "after_sha256": "08b1f3d9faefce0493a536974988beb83027e03c373ef0258c250cb7eae7c6a7",
+      "bytes": 17027
+    },
+    {
+      "status": "M",
+      "path": "package.json",
+      "before_sha256": "9dc3b3fb45e75d8125571ca78fd170a62bbc0f57521dcd2e53bc84a5a435c377",
+      "after_sha256": "7630d8d0c6abd2d53315ab315f5bbe71cc7f386271c1d7f5de8619130fa3d193",
+      "bytes": 2194
+    },
+    {
+      "status": "A",
+      "path": "scripts/hosted-quality.py",
+      "before_sha256": null,
+      "after_sha256": "4522a871801ad6e66797e331909fef5e2d51b6d8733e22a7afb954839ab41c35",
+      "bytes": 1462
+    },
+    {
+      "status": "A",
+      "path": "scripts/quality-check.mjs",
+      "before_sha256": null,
+      "after_sha256": "e82e2c9b0e704e372d3f76461c570ff32cbb86c467a0a3a4b398667dd4e32a15",
+      "bytes": 588
+    },
+    {
+      "status": "A",
+      "path": "tests/quality-hosted-runtime.mjs",
+      "before_sha256": null,
+      "after_sha256": "17c49e559e5c396812513b6f7133a9e3c459f4f059a91519eb0973f84ac3f57e",
+      "bytes": 7500
+    },
+    {
+      "status": "A",
+      "path": "tests/quality-monitor.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8f7656343a7ef9e201906e94e5efa1354275f6a8d889fc03e68abf291a7a6380",
+      "bytes": 8041
+    },
+    {
+      "status": "M",
+      "path": "tsconfig.json",
+      "before_sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+      "after_sha256": "edfaad4fe7997d45624f3ddafd881f54fd7c7fa2e45df58be48adb56243ac0b9",
+      "bytes": 840
+    }
+  ],
+  "omitted": "Hidden files, credentials, sessions, node_modules, build archives and generated TypeScript cache."
+}

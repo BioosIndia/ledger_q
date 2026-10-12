@@ -1,0 +1,523 @@
+{
+  "httpStatus": 200,
+  "result": {
+    "product": "LEDGER-Q",
+    "buildTag": "ledger-quality/2026-10-12.3",
+    "engineering": {
+      "id": "LEDGER-Q:ledger-quality/2026-10-12.3:engineering:2026-10-12T06",
+      "product": "LEDGER-Q",
+      "mode": "engineering",
+      "buildTag": "ledger-quality/2026-10-12.3",
+      "policyVersion": "synthetic-quality-monitor/1",
+      "startedAt": "2026-10-12T06:36:01.873Z",
+      "finishedAt": "2026-10-12T06:36:04.984Z",
+      "state": "CONTROL_CHECKS_PASSED",
+      "checks": [
+        {
+          "id": "ORIGINAL_READBACK",
+          "pass": true,
+          "expected": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+          "actual": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+          "note": "Isolated synthetic original; no customer evidence accessed."
+        },
+        {
+          "id": "FRESH_WORKSPACE_EMPTY",
+          "pass": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "INVESTIGATION_HOLD",
+          "pass": true,
+          "expected": "HOLD",
+          "actual": "HOLD"
+        },
+        {
+          "id": "GAPS_BLOCK_APPROVAL",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CAPA_EFFECTIVENESS_REQUIRED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "SOURCE_CHANGE_REOPENS_REVIEW",
+          "pass": true,
+          "expected": "STALE",
+          "actual": "STALE"
+        },
+        {
+          "id": "AI_USE_SUSPENDED",
+          "pass": true,
+          "expected": "SUSPENDED",
+          "actual": "SUSPENDED"
+        },
+        {
+          "id": "CANDIDATE_CANNOT_APPROVE",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "UNKNOWN_CAUSE_RETAINED",
+          "pass": true,
+          "expected": "UNKNOWN",
+          "actual": "UNKNOWN"
+        },
+        {
+          "id": "ENGINE_E01",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unsupported statement rejected."
+        },
+        {
+          "id": "ENGINE_E02",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unit mutation cannot merge."
+        },
+        {
+          "id": "ENGINE_E03",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Different batches remain distinct."
+        },
+        {
+          "id": "ENGINE_E04",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Removed citation rejects candidate."
+        },
+        {
+          "id": "ENGINE_E05",
+          "pass": true,
+          "expected": false,
+          "actual": false,
+          "note": "Changing <= to < loses exact support."
+        },
+        {
+          "id": "ENGINE_E06",
+          "pass": true,
+          "expected": "STALE",
+          "actual": "STALE",
+          "note": "Dependent quality record becomes stale."
+        },
+        {
+          "id": "ENGINE_E07",
+          "pass": true,
+          "expected": false,
+          "actual": false,
+          "note": "Candidate cannot grant approval."
+        },
+        {
+          "id": "ENGINE_E08",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Missing effectiveness blocks closure."
+        },
+        {
+          "id": "ENGINE_E09",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unresolved assay conflict blocks acceptance."
+        },
+        {
+          "id": "ENGINE_E10",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Intended-use uncertainty remains visible."
+        },
+        {
+          "id": "ENGINE_E11",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Not live model repeatability."
+        },
+        {
+          "id": "ENGINE_E12",
+          "pass": true,
+          "expected": "LAB_RECORD_CONFLICT",
+          "actual": "LAB_RECORD_CONFLICT",
+          "note": "First evidenced break retained."
+        }
+      ],
+      "model": null,
+      "inputHash": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+      "previousHash": "11925c6d88e88059ab7e7427f6130516660038fe0c628eb391960fc644129d4a",
+      "nextAction": "Inspect the saved bounded evidence. Professional acceptance remains required.",
+      "qualification": {
+        "engineering": "Bounded synthetic control checks",
+        "professionalAccuracy": "NOT_ESTABLISHED",
+        "realUserBenefits": "NOT_ESTABLISHED",
+        "regulatedProductionQualification": "NOT_ESTABLISHED",
+        "humanAcceptance": "REQUIRED",
+        "automaticApproval": false,
+        "release": false
+      },
+      "synthetic": true,
+      "privateEvidenceAccessed": false,
+      "release": false,
+      "latencyMs": 3111,
+      "receiptHash": "9a42c3b31fc87b380b1bd2bef3a0e355f3a4d2d0403675990ad4df9c1b39f882",
+      "integrityVerified": true,
+      "freshness": "CURRENT",
+      "ageMinutes": 2
+    },
+    "liveAI": {
+      "id": "LEDGER-Q:ledger-quality/2026-10-12.3:live-ai:2026-10-12",
+      "product": "LEDGER-Q",
+      "mode": "live-ai",
+      "buildTag": "ledger-quality/2026-10-12.3",
+      "policyVersion": "synthetic-quality-monitor/1",
+      "startedAt": "2026-10-12T06:33:47.128Z",
+      "finishedAt": "2026-10-12T06:34:12.647Z",
+      "state": "CONTROL_CHECKS_PASSED",
+      "checks": [
+        {
+          "id": "ORIGINAL_READBACK",
+          "pass": true,
+          "expected": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+          "actual": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+          "note": "Isolated synthetic original; no customer evidence accessed."
+        },
+        {
+          "id": "FRESH_WORKSPACE_EMPTY",
+          "pass": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "INVESTIGATION_HOLD",
+          "pass": true,
+          "expected": "HOLD",
+          "actual": "HOLD"
+        },
+        {
+          "id": "GAPS_BLOCK_APPROVAL",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CAPA_EFFECTIVENESS_REQUIRED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "SOURCE_CHANGE_REOPENS_REVIEW",
+          "pass": true,
+          "expected": "STALE",
+          "actual": "STALE"
+        },
+        {
+          "id": "AI_USE_SUSPENDED",
+          "pass": true,
+          "expected": "SUSPENDED",
+          "actual": "SUSPENDED"
+        },
+        {
+          "id": "CANDIDATE_CANNOT_APPROVE",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "UNKNOWN_CAUSE_RETAINED",
+          "pass": true,
+          "expected": "UNKNOWN",
+          "actual": "UNKNOWN"
+        },
+        {
+          "id": "ENGINE_E01",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unsupported statement rejected."
+        },
+        {
+          "id": "ENGINE_E02",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unit mutation cannot merge."
+        },
+        {
+          "id": "ENGINE_E03",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Different batches remain distinct."
+        },
+        {
+          "id": "ENGINE_E04",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Removed citation rejects candidate."
+        },
+        {
+          "id": "ENGINE_E05",
+          "pass": true,
+          "expected": false,
+          "actual": false,
+          "note": "Changing <= to < loses exact support."
+        },
+        {
+          "id": "ENGINE_E06",
+          "pass": true,
+          "expected": "STALE",
+          "actual": "STALE",
+          "note": "Dependent quality record becomes stale."
+        },
+        {
+          "id": "ENGINE_E07",
+          "pass": true,
+          "expected": false,
+          "actual": false,
+          "note": "Candidate cannot grant approval."
+        },
+        {
+          "id": "ENGINE_E08",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Missing effectiveness blocks closure."
+        },
+        {
+          "id": "ENGINE_E09",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Unresolved assay conflict blocks acceptance."
+        },
+        {
+          "id": "ENGINE_E10",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Intended-use uncertainty remains visible."
+        },
+        {
+          "id": "ENGINE_E11",
+          "pass": true,
+          "expected": true,
+          "actual": true,
+          "note": "Not live model repeatability."
+        },
+        {
+          "id": "ENGINE_E12",
+          "pass": true,
+          "expected": "LAB_RECORD_CONFLICT",
+          "actual": "LAB_RECORD_CONFLICT",
+          "note": "First evidenced break retained."
+        },
+        {
+          "id": "LIVE_MODEL_CANARY",
+          "pass": true,
+          "expected": "Two distinct models, exact reference answers and no approval",
+          "actual": "CANARY_PASSED"
+        }
+      ],
+      "model": {
+        "provider": "gemini",
+        "status": "CANARY_PASSED",
+        "models": [
+          "gemini-3.5-flash-lite",
+          "gemini-3.1-flash-lite"
+        ],
+        "attempts": [
+          {
+            "role": "AUTHOR",
+            "model": "gemini-3.5-flash-lite",
+            "actualModel": "gemini-3.5-flash-lite",
+            "status": "RECEIVED",
+            "latencyMs": 636,
+            "usage": {
+              "promptTokenCount": 188,
+              "candidatesTokenCount": 113,
+              "totalTokenCount": 301,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 188
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "at": "2026-10-12T06:33:51.057Z"
+          },
+          {
+            "role": "INDEPENDENT_REVIEWER",
+            "model": "gemini-3.1-flash-lite",
+            "status": "FAILED",
+            "reason": "PROVIDER_UNAVAILABLE",
+            "latencyMs": 11567,
+            "at": "2026-10-12T06:34:02.624Z"
+          },
+          {
+            "role": "INDEPENDENT_REVIEWER",
+            "model": "gemini-3.6-flash",
+            "actualModel": "gemini-3.6-flash",
+            "status": "RECEIVED",
+            "latencyMs": 10023,
+            "usage": {
+              "promptTokenCount": 209,
+              "candidatesTokenCount": 12,
+              "totalTokenCount": 221,
+              "promptTokensDetails": [
+                {
+                  "modality": "TEXT",
+                  "tokenCount": 209
+                }
+              ],
+              "serviceTier": "standard"
+            },
+            "at": "2026-10-12T06:34:12.647Z"
+          }
+        ],
+        "qualityScope": "A synthetic exact-answer canary, not representative professional validation.",
+        "maxGenerationCalls": 4,
+        "processingConsent": "Owner requested public/synthetic quality checks only.",
+        "humanApproval": false,
+        "authorCheck": {
+          "pass": true,
+          "expected": {
+            "sourceId": "SYNTHETIC-QUALITY-CANARY",
+            "sourceVersion": 1,
+            "originalAssay": "94.2%",
+            "transcribedAssay": "99.1%",
+            "batch": "LQ-026",
+            "method": "HPLC-Q-02",
+            "rootCause": "UNKNOWN",
+            "capaEffectiveness": null,
+            "status": "HOLD",
+            "release": false
+          },
+          "actual": {
+            "sourceId": "SYNTHETIC-QUALITY-CANARY",
+            "sourceVersion": 1,
+            "originalAssay": "94.2%",
+            "transcribedAssay": "99.1%",
+            "batch": "LQ-026",
+            "method": "HPLC-Q-02",
+            "rootCause": "UNKNOWN",
+            "capaEffectiveness": null,
+            "status": "HOLD",
+            "release": false
+          }
+        },
+        "lastHTTPStatus": 503,
+        "lastProviderStatus": "UNAVAILABLE",
+        "lastProviderMessage": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+        "fallbacks": [
+          {
+            "role": "INDEPENDENT_REVIEWER",
+            "from": "gemini-3.1-flash-lite",
+            "to": "gemini-3.6-flash",
+            "reason": "PROVIDER_UNAVAILABLE"
+          }
+        ],
+        "reviewerCheck": {
+          "pass": true,
+          "actual": {
+            "supported": true,
+            "issues": [],
+            "release": false
+          }
+        },
+        "sourceHash": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+        "actualInference": true
+      },
+      "inputHash": "c712ccada23fa8294c1b872f82b250b40686ef6afa5e1c750869ea9ca1446651",
+      "previousHash": "ed3e7477c22a0c1caa4890d576800b843fd4103fc2440ea1a5a998c2dde77161",
+      "nextAction": "Inspect the saved bounded evidence. Professional acceptance remains required.",
+      "qualification": {
+        "engineering": "Bounded synthetic control checks",
+        "professionalAccuracy": "NOT_ESTABLISHED",
+        "realUserBenefits": "NOT_ESTABLISHED",
+        "regulatedProductionQualification": "NOT_ESTABLISHED",
+        "humanAcceptance": "REQUIRED",
+        "automaticApproval": false,
+        "release": false
+      },
+      "synthetic": true,
+      "privateEvidenceAccessed": false,
+      "release": false,
+      "latencyMs": 25519,
+      "receiptHash": "11925c6d88e88059ab7e7427f6130516660038fe0c628eb391960fc644129d4a",
+      "integrityVerified": true,
+      "freshness": "CURRENT",
+      "ageMinutes": 4
+    },
+    "history": [
+      {
+        "id": "LEDGER-Q:ledger-quality/2026-10-12.3:engineering:2026-10-12T06",
+        "mode": "engineering",
+        "buildTag": "ledger-quality/2026-10-12.3",
+        "finishedAt": "2026-10-12T06:36:04.984Z",
+        "state": "CONTROL_CHECKS_PASSED",
+        "receiptHash": "9a42c3b31fc87b380b1bd2bef3a0e355f3a4d2d0403675990ad4df9c1b39f882",
+        "integrityVerified": true
+      },
+      {
+        "id": "LEDGER-Q:ledger-quality/2026-10-12.3:live-ai:2026-10-12",
+        "mode": "live-ai",
+        "buildTag": "ledger-quality/2026-10-12.3",
+        "finishedAt": "2026-10-12T06:34:12.647Z",
+        "state": "CONTROL_CHECKS_PASSED",
+        "receiptHash": "11925c6d88e88059ab7e7427f6130516660038fe0c628eb391960fc644129d4a",
+        "integrityVerified": true
+      },
+      {
+        "id": "LEDGER-Q:ledger-quality/2026-10-12.2:live-ai:2026-10-12",
+        "mode": "live-ai",
+        "buildTag": "ledger-quality/2026-10-12.2",
+        "finishedAt": "2026-10-12T06:23:02.867Z",
+        "state": "HOLD",
+        "receiptHash": "ed3e7477c22a0c1caa4890d576800b843fd4103fc2440ea1a5a998c2dde77161",
+        "integrityVerified": true
+      },
+      {
+        "id": "LEDGER-Q:ledger-quality/2026-10-12.1:live-ai:2026-10-12",
+        "mode": "live-ai",
+        "buildTag": "ledger-quality/2026-10-12.1",
+        "finishedAt": "2026-10-12T06:15:07.972Z",
+        "state": "HOLD",
+        "receiptHash": "617c3563605cfd4907488eed5c05e0f3a4ca4380b3049e3f501e6b4a40ea8a32",
+        "integrityVerified": true
+      },
+      {
+        "id": "LEDGER-Q:ledger-quality/2026-10-12.1:engineering:2026-10-12T06",
+        "mode": "engineering",
+        "buildTag": "ledger-quality/2026-10-12.1",
+        "finishedAt": "2026-10-12T06:13:25.404Z",
+        "state": "CONTROL_CHECKS_PASSED",
+        "receiptHash": "1e87ae4fa4063a7821670b96a3584ab9f2e7df3f49bef4859b1613c31179e012",
+        "integrityVerified": true
+      }
+    ],
+    "qualification": {
+      "engineering": "Bounded synthetic control checks",
+      "professionalAccuracy": "NOT_ESTABLISHED",
+      "realUserBenefits": "NOT_ESTABLISHED",
+      "regulatedProductionQualification": "NOT_ESTABLISHED",
+      "humanAcceptance": "REQUIRED",
+      "automaticApproval": false,
+      "release": false
+    },
+    "scope": "Public/synthetic engineering receipts only; no private workspace, qualified approval or regulatory release."
+  }
+}
